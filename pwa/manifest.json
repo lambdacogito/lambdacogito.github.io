@@ -1,0 +1,22 @@
+{
+  "name": "Dr. Jamin Chen's Home",
+  "short_name": "D.C. Blog",
+  "description": "Researcher on Knowledge Computing. Ph.D in Behavioral Informatics.",
+  "icons": [
+    {
+      "src": "icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
