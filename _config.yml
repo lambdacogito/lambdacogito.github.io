@@ -1,10 +1,10 @@
-title: Dr. Jamin Chen's Home
+title: InnoTrek
 SEOTitle: Dr. Jamin Chen's Home
-header-img: img/home-bg-geek.jpg
+header-img: "img/home-bg-o.jpg"
 email: chenxm35@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here is Dr. Jamin Chen's home site. Share my own ideas on computer science,
-  arts, and thinking on this beautiful and disordered planet Earth. Quota, 
+  arts, and thinking on this beautiful and disordered planet Earth. Quota,
   learn more beyond what you can imagine.
 keyword: ""
 url: "https://xiaming.site"
@@ -36,7 +36,7 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true     # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN  
+#timezone: CN
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
@@ -65,7 +65,7 @@ kramdown:
 netease_comment: false
 
 # Analytics settings
-# Baidu Analytics 
+# Baidu Analytics
 # ba_track_id: [your track id]
 
 # Google Analytics
@@ -73,7 +73,7 @@ netease_comment: false
 # ga_domain: xiaming.site
 
 # Sidebar settings
-sidebar: true 
+sidebar: true
 sidebar-about-description: "Researcher on Knowledge Computing. Ph.D in Behavioral Informatics."
 sidebar-avatar: https://github.com/caesar0301.png
 
