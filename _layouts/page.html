@@ -4,10 +4,15 @@ layout: default
 
 {% comment %}
 @param {sidebar} enable/disable sidebar (default enabled)
+@param {short_header} enable/disable short intro header (default false)
 {% endcomment %}
 
 <!-- Page Header -->
-{% include intro-header.html type='page' %}
+{% if page.short_header == true %}
+{% include intro-header.html type='page' short=true %}
+{% else %}
+{% include intro-header.html type='page' short=false %}
+{% endif %}
 
 <!-- Main Content -->
 <div class="container">

@@ -1,6 +1,6 @@
 title: InnoTrek
 SEOTitle: Dr. Jamin Chen's Home
-header-img: "img/home-bg-o.jpg"
+header-img: "img/bg-taiwan.jpg"
 email: chenxm35@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here is Dr. Jamin Chen's home site. Share my own ideas on computer science,
@@ -32,7 +32,7 @@ linkedin_username:  xiamingc
 # Build settings
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true     # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
@@ -75,7 +75,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "Researcher on Knowledge Computing. Ph.D in Behavioral Informatics."
-sidebar-avatar: https://github.com/caesar0301.png
+sidebar-avatar: /img/avatar.jpg
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
