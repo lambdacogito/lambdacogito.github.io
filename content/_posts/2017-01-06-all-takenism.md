@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "新「拿来主义」"
+title: "A New Gloom of All-Takenism"
 subtitle: ""
 date: 2017-01-06
 author: "jaminc"

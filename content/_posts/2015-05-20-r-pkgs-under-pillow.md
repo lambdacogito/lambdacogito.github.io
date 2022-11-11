@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "常用R工具包合集"
+title: "A Collection of R Pkgs Under Your Pillow"
 subtitle: ""
 date:  2015-05-20
 author: "jaminc"

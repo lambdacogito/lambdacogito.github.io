@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我站在比特之巅, 凝望着知识之渊"
+title: "Staring Into The Abyss of Knowledge"
 subtitle: ""
 date: 2022-02-12
 author: "jaminc"
@@ -45,8 +45,6 @@ tags: []
 这便是现在的我满怀期待、而未来的人们司空见惯的世界。**对数据的高效利用是普罗大众午后徜徉漫步的山坡，而不是少数数字巨头占据的智力高地。**
 
 人们在创造数据的同时，也应该能够享受到同等对数据掌控的自由和权利。
-
-（咦？醒了，原来是个梦）
 
 参考：
 https://link.zhihu.com/?target=https%3A//techjury.net/blog/how-much-data-is-created-every-day/

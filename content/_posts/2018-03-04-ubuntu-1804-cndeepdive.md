@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu 18.04安装CNDeepdive"
+title: "A Brief Tutorial on CNDeepdive"
 subtitle: ""
 date: 2018-03-04
 author: "jaminc"
