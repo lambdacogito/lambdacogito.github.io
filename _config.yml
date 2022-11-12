@@ -3,9 +3,9 @@ SEOTitle: Dr. Jamin Chen's Home
 header-img: "img/bg-taiwan.jpg"
 email: chenxm35@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Here is Dr. Jamin Chen's home site. Share my own ideas on computer science,
-  arts, and thinking on this beautiful and disordered planet Earth. Quota,
-  learn more beyond what you can imagine.
+  Here is Dr. Jamin Chen's homepage. Sharing his thinking on computer intellegence,
+  arts, as well as about this beautiful but disordered world.
+  Learn more beyond what you can imagine.
 keyword: ""
 url: "https://xiaming.site"
 baseurl: ""
@@ -15,7 +15,7 @@ collections:
   poetry:
     output: false
   projects:
-    output: true
+    output: false
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -32,7 +32,7 @@ linkedin_username:  xiamingc
 # Build settings
 highlighter: rouge
 permalink: pretty
-paginate: 8
+paginate: 7
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true     # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-# disqus_username: xiamingdotsite
+disqus_username: xiamingdotsite
 
 # Netease settings
 netease_comment: false
