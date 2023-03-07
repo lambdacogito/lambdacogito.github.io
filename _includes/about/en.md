@@ -1,13 +1,13 @@
 I am a natural optimist, also a dreamer about something big. This big is
 relative in the sense that its state is dynamic with the outside world or
-sometimes with my own inside spiritual world. I am also enthusiastic about human
-technologies. Combining these both gives me a strong vision and expectation of
-innovations. As human technologies are enduring with a small progress almost in
-every theoretical and industrial domain these decades, I have to absort
-inspiration from sci-fi movies and writings. As a result StarTrek becomes my
-favorite episodes and movie series. This deepest depression against reality also
-motivates me to explore some projects that would fulfill my own vision on the
-future.
+sometimes with my own inside spiritual world. I am also an enthusiastic lover of
+human technologies. Combining these both gives me a strong vision and
+expectation of innovations. However, human technologies are enduring with a
+small progress almost in every theoretical and industrial domain these decades.
+This deepest depression against reality makes me to absort inspiration from
+sci-fi movies and writings. This is why StarTrek becomes my favorite episodes
+and movie series in the history, and also why I have to explore some projects
+that would fulfill my own vision on the future.
 
 ## Education
 
