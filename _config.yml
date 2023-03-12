@@ -15,7 +15,7 @@ collections:
   poetry:
     output: false
   projects:
-    output: false
+    output: true
 
 # Publish posts or collection documents with a future date.
 future: true
