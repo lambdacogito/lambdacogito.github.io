@@ -5,7 +5,7 @@ subtitle: ""
 date: 2023-03-12
 author: "JaminChen"
 header-img: "img/post-bg-universe.jpg"
-tags: []
+tags: ["Cognitive Computing", "Wolfram", "OpenCog"]
 ---
 
 # Introduction
