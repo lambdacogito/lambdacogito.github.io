@@ -4,21 +4,22 @@ sometimes with my own inside spiritual world. I am also an enthusiastic lover of
 human technologies. Combining these both gives me a strong vision and
 expectation of innovations. However, human technologies are enduring with a
 small progress almost in every theoretical and industrial domain these decades.
-This deepest depression against reality makes me to absort inspiration from
-sci-fi movies and writings. This is why StarTrek becomes my favorite episodes
-and movie series in the history, and also why I have to explore some projects
-that would fulfill my own vision on the future.
+This deepest depression against reality makes me to absorb inspiration from
+sci-fi movies and writings. This is why
+[StarTrek](https://simple.wikipedia.org/wiki/Star_Trek) becomes one of my
+favorite episodes and movie series in the history, and also why I have to
+explore some projects that would fulfill my own vision on the future.
 
 ## Education
 
 *   2010-2016: Shanghai Jiaotong Univ., Information and Communication
-    Engineering, Ph.D
+    Engineering, Ph.D.
 *   2006-2010: Xidian Univ., Optical Information and Science Technology,
     Bachelor
 
-## Ph.D Research
+## Ph.D. Research
 
-My Ph.D research was on renewed models and characteristics of human mobility,
+My Ph.D. research was on renewed models and characteristics of human mobility,
 with advanced statistical techniques upon large-scale network traffic. There is
 a large gap between observable behavioral patterns and digital bits that is
 collected from raw network data like mobile geo-located application traffic.
@@ -29,9 +30,47 @@ Univ.](http://en.sjtu.edu.cn/). Now [the
 thesis](https://github.com/caesar0301/phd-dissertation) is available for public
 (in Chinese).
 
-In the reasearch, a by-product is the initialization of [awesome-public-data
+In the research, a by-product is the initialization of [awesome-public-data
 community](https://github.com/awesomedata). During the early years of big data
 (back to 2009 and 2010), it suffered a painful search for high-quality research
-data. This urged me to start the data community and host a bunch of reasearch
+data. This urged me to start the data community and host a bunch of research
 quality data. This community is still active since then. You can access [slack
 channel](https://awesomedataworld.slack.com/) for latest discussion on data joy.
+
+## Industrial Experience
+
+At the beginning of pursuing my Ph.D. degree, Big Data tendency was appearing
+and this technology was climbing its Gartner Hyper Cycle at the Innovation
+Trigger stage. Big data as preprocessing and data science were involved in my
+daily research on human behavior pattern mining. I joined a big data startup,
+Transwarp whose name comes from sci-fi novel Three Bodies, at Shanghai after my
+graduation. And in there I spent more than three years to explore the technology
+of combining big data stack with the appealing cloud-native Kubernetes ecosystem.
+
+Afterwards in 2020, I joined the team of a native Cloud service provider to dig
+deeply into the cloud native service for big data warehouse (as well as data
+lake). From then I began to seriously think about the technologies under the
+hood of Wolfram Alpha, as I was attracted and called on by its efficiency and
+unification of multi-paradigm data representations. These features lay in the
+core of a successful data-lake warehouse. When I realized that it was hard to
+fulfill my experimental thoughts on a commercial product with a heavy tech debt,
+the [HadronMind community](https://github.com/hadronmind) was constructed to do
+these proof of concepts (PoC).
+
+With nearly seven years of industrial experience, I have learned a bunch of
+skills required by the PoCs. From programming languages to arch design, there
+still more knowledge and theories to learn to fill in the toolbox before having
+my own team. It includes computer language theory, mathematical logic,
+computational logic, artificial general intelligence theory, cognitive science
+and more. This extensive learning also gives me an insight into the rapid
+iteration of data technologies.
+
+## Life
+
+Deep into the heart, family is my treasure. All the stories we formulate for
+ourselves would be blowing away in the wind of time. The existence of ME and its
+all ambitious aims are about meanings to conquer against the aimlessness of
+lives. By the way, this is not pessimism, but on the contrary, real optimism. 
+
+ME have hobbies of Chinese calligraphy, aquarium, travelling, reading and
+thinking. Anything would be better to do with my family.
