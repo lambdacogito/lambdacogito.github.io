@@ -1,19 +1,18 @@
 title: Jamin's ramblings
 SEOTitle: InnoTrek
-header-img: "img/bg-taiwan.jpg"
+header-img: "img/about-bg-walle.jpg"
 email: chenxm35@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Here is Dr. Jamin Chen's homepage. Sharing his thinking on computer intellegence,
-  arts, as well as this beautiful but disordered world.
-  Learn more beyond what you can imagine.
+  Here is Dr. Jamin Chen's homepage. Sharing thinking on computer intellegence,
+  arts, and on the disordered world. Learn more beyond what you can imagine.
 keyword: ""
 url: "https://xiaming.site"
 baseurl: ""
 
 collections_dir: content
 collections:
-  poetry:
-    output: false
+  poems:
+    output: true
   projects:
     output: true
 
