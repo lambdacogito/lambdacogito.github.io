@@ -67,10 +67,6 @@ netease_comment: false
 # Baidu Analytics
 # ba_track_id: [your track id]
 
-# Google Analytics
-# ga_track_id: 'UA-xxxxxx'
-# ga_domain: xiaming.site
-
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "Researcher on Knowledge Computing. Ph.D in Behavioral Informatics."
