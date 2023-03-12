@@ -17,7 +17,7 @@ explore some projects that would fulfill my own vision on the future.
 *   2006-2010: Xidian Univ., Optical Information and Science Technology,
     Bachelor
 
-### Ph.D. Research
+#### Ph.D. Research
 
 My Ph.D. research was on renewed models and characteristics of human mobility,
 with advanced statistical techniques upon large-scale network traffic. There is
