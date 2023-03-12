@@ -10,14 +10,14 @@ sci-fi movies and writings. This is why
 favorite episodes and movie series in the history, and also why I have to
 explore some projects that would fulfill my own vision on the future.
 
-## Education
+#### Education
 
 *   2010-2016: Shanghai Jiaotong Univ., Information and Communication
     Engineering, Ph.D.
 *   2006-2010: Xidian Univ., Optical Information and Science Technology,
     Bachelor
 
-## Ph.D. Research
+### Ph.D. Research
 
 My Ph.D. research was on renewed models and characteristics of human mobility,
 with advanced statistical techniques upon large-scale network traffic. There is
@@ -37,7 +37,7 @@ data. This urged me to start the data community and host a bunch of research
 quality data. This community is still active since then. You can access [slack
 channel](https://awesomedataworld.slack.com/) for latest discussion on data joy.
 
-## Industrial Experience
+#### Industrial Experience
 
 At the beginning of pursuing my Ph.D. degree, Big Data tendency was appearing
 and this technology was climbing its Gartner Hyper Cycle at the Innovation
@@ -65,7 +65,7 @@ computational logic, artificial general intelligence theory, cognitive science
 and more. This extensive learning also gives me an insight into the rapid
 iteration of data technologies.
 
-## Life
+#### Life
 
 Deep into the heart, family is my treasure. All the stories we formulate for
 ourselves would be blowing away in the wind of time. The existence of ME and its
