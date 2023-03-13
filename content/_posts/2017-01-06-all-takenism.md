@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A New Gloom of All-Takenism"
-subtitle: ""
+subtitle: "新拿来主义"
 date: 2017-01-06
 author: "jaminc"
 header-img: "img/post-bg-universe.jpg"
