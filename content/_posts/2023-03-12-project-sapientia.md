@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Brief Introduction to Project Sapientia"
+title: "Project Sapientia"
 subtitle: ""
 date: 2023-03-12
 author: "Jamin Chen"
