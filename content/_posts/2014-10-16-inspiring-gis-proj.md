@@ -3,7 +3,7 @@ layout: post
 title: "Inspiring GIS Projects in R"
 subtitle: ""
 date: 2014-10-16
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["GIS", "rlang"]
 ---

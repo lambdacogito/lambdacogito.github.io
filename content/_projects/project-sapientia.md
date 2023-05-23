@@ -2,7 +2,7 @@
 layout: intro
 title: Project Sapientia
 header-img: "img/about-bg.jpg"
-author: JaminChen
+author: "Jamin Chen"
 date: 2023-03-12
 lang: en
 ---

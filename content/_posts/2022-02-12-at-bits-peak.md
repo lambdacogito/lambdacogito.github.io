@@ -3,7 +3,7 @@ layout: post
 title: "Staring Into The Abyss of Knowledge"
 subtitle: "我站在比特之巅，凝望着知识之渊"
 date: 2022-02-12
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: []
 ---

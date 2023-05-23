@@ -3,7 +3,7 @@ layout: post
 title: "A New Gloom of All-Takenism"
 subtitle: "新拿来主义"
 date: 2017-01-06
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: []
 ---

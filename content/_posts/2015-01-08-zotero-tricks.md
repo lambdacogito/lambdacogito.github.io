@@ -3,7 +3,7 @@ layout: post
 title: "Top Tricks to Make Your Zotero More Powerful"
 subtitle: ""
 date: 2015-01-08
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["Tools"]
 ---

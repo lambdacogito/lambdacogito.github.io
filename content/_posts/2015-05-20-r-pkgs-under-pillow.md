@@ -3,7 +3,7 @@ layout: post
 title: "A Collection of R Pkgs Under Your Pillow"
 subtitle: ""
 date:  2015-05-20
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["rlang"]
 ---

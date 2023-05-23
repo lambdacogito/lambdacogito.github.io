@@ -3,7 +3,7 @@ layout: post
 title: "A Brief Introduction to Project Sapientia"
 subtitle: ""
 date: 2023-03-12
-author: "JaminChen"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["Sapientia", "Cognitive Computing", "Wolfram", "OpenCog"]
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "A Brief Tutorial on CNDeepdive"
 subtitle: ""
 date: 2018-03-04
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["OpenKG", "NLP"]
 ---

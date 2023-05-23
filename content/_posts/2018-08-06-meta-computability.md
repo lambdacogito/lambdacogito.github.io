@@ -3,7 +3,7 @@ layout: post
 title: "The Computability of Metadata (Part 3)"
 subtitle: "从链接数据到属性图的思考"
 date: 2018-08-06
-author: "JaminChen"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["Metadata", "Linked Data", "Graph"]
 ---

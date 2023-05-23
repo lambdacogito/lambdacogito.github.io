@@ -3,7 +3,7 @@ layout: post
 title: "Understanding Urban Lives with Open Data"
 subtitle: ""
 date: 2014-10-23
-author: "jaminc"
+author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["Open Data"]
 ---
