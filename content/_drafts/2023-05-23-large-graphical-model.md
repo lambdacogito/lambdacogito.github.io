@@ -32,27 +32,29 @@ models trained with the same datasets at different times are isolated and
 unstable when considering their inner representations.
 
 A portion of community endeavor is put into reversing engineering the black box
-by prompt engineering [?], single neuron semantics interpretation [?],
-theoretical mirroring structural analysis [?] etc. We argue that the first
-principle thinking should be used to derive the basic and core problem about
-what we are talking about knowledge representation. What is the most straight
-forward way to represent knowledge? The answer is proposed as "symbolic". We
-human race gained the capability to exchange information and relay history from
-generation to generation as for the invention of symbolic expression, which also
-enhances our logical reasoning under the help of symbolically driven inner voice
-[?]. Hence the symbolic is a native way of knowledge representation. 
+by prompt engineering [?], single neuron interpretation [?], network structural
+analysis [?] etc. We argue that the first principle thinking should be used to
+derive the basic and core problem about what we are talking about knowledge
+representation. What is the most straight forward way to represent knowledge?
+The answer is proposed as "symbolic". We human race gained the capability to
+exchange information and relay history from generation to generation as for the
+invention of symbolic expression, which also enhances our logical reasoning
+under the help of symbolically driven inner voice [?]. Hence the symbolic is a
+native way of knowledge representation.
 
 ## Knowledge Representation
 
 Hypothesis: LLM illustrates the capability to absorb world knowledge as well as
 reasonable logics, because it masters not the world knowledge per se, but the
-rule of knowledge expression (in symbolic natural language).
+rule of knowledge organization in natural language.
+
+We have accumulated a large amount of knowledge in different symbolic forms.
 
 * Disadvantages of knowledge in NL
 * Hypergraph enabled
 * Natural integration of cognitive and actionable knowledge?
 
-## Generative Graphical Patterns
+## Generative Graph Patterns
 
 * Large Graph Model
 
