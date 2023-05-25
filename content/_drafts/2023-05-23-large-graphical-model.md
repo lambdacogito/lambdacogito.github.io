@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Large Graphical Model to Condense Knowledge and Logics"
+title: "Large Graph Model to Condense Knowledge and Logics"
 subtitle: ""
 date: 2023-05-23
 author: "Jamin Chen"
@@ -36,17 +36,17 @@ by prompt engineering [?], single neuron semantics interpretation [?],
 theoretical mirroring structural analysis [?] etc. We argue that the first
 principle thinking should be used to derive the basic and core problem about
 what we are talking about knowledge representation. What is the most straight
-forward way to represent knowledge? Yes, it's the symbol. We human race gained
-the capability to exchange information and relay history from generation to
-generation as for the invention of symbolic expression, which also enhances our
-logical reasoning under the help of symbolically driven inner voice [?]. Hence
-the symbolic is a native way of knowledge representation. 
+forward way to represent knowledge? The answer is proposed as "symbolic". We
+human race gained the capability to exchange information and relay history from
+generation to generation as for the invention of symbolic expression, which also
+enhances our logical reasoning under the help of symbolically driven inner voice
+[?]. Hence the symbolic is a native way of knowledge representation. 
 
 ## Knowledge Representation
 
-Hypothesis: LLM illustrates long-winded expressive knowledge about this world
-and even reasonable logics, because it masters not the world knowledge per se,
-but the rule of knowledge expression (in symbolic natural language).
+Hypothesis: LLM illustrates the capability to absorb world knowledge as well as
+reasonable logics, because it masters not the world knowledge per se, but the
+rule of knowledge expression (in symbolic natural language).
 
 * Disadvantages of knowledge in NL
 * Hypergraph enabled
@@ -54,7 +54,7 @@ but the rule of knowledge expression (in symbolic natural language).
 
 ## Generative Graphical Patterns
 
-* Large Graphical Models
+* Large Graph Model
 
 ## A General Framework towards LGM
 NL -> klang (hypergraph enhanced) -> LGM -> klang -> NL
@@ -63,3 +63,6 @@ NL -> klang (hypergraph enhanced) -> LGM -> klang -> NL
 
 ## Future
 
+## References
+
+[1] Ektefaie, Y., Dasoulas, G., Noori, A. et al. Multimodal learning with graphs. Nat Mach Intell 5, 340–350 (2023). https://doi.org/10.1038/s42256-023-00624-6
