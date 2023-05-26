@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Knowledge Representation and Large Graph Models"
+title: "Knowledge Representation and Large Graph Models (Part 1)"
 subtitle: ""
-date: 2023-05-23
+date: 2023-05-27
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
 tags: ["Sapientia", "LGM", "Knowledge Representation"]
@@ -20,10 +20,14 @@ of future artificial general intelligence (AGI). Recent success of Transformer
 in natural language field, especially with Large Language Models like GPT-4 and
 LLaMA series, inspires us that neural networks (NNs) with Attention mechanism
 are efficient at condensing information and logics encoded in sequential tokens
-[?]. However these models still remain as black box to uncover the inner
+[1]. However these models still remain as black box to uncover the inner
 representation of learned knowledge. The main reason comes from the token
 vectorization and high dimensional nature of neural networks with a vast amount
 (tens to hundreds of billions) of parameters and deep layers.
+
+**Hypothesis-1**. LLM illustrates the capability to absorb world knowledge as
+well as reasonable logics, because it masters not the world knowledge per se,
+but the rules of knowledge organization in natural languages.
 
 We can imagine there is a higher dimensional space that absorbs and masters the
 token occurrence patterns as vectors, also with their computational relations as
@@ -35,23 +39,25 @@ fine-tuning techniques. The models trained by different people, even a group of
 models trained with the same datasets at different times are isolated and
 unstable when considering their inner representations.
 
-**Hypothesis-1**. LLM illustrates the capability to absorb world knowledge as
-well as reasonable logics, because it masters not the world knowledge per se,
-but the rules of knowledge organization in natural languages.
+![awesome-transformer-nlp](/img/inpost/2023/awesome-transformer-nlp.png)
 
 A portion of community endeavor is put into reversing engineering the black box
-by prompt engineering [?], single neuron interpretation [?], network structural
-analysis [?] etc. We argue that the first principle thinking should be used to
+by prompt engineering [2], single neuron interpretation [3], network structural
+analysis [4] etc. We argue that the first principle thinking should be used to
 derive the basic and core problem about what we are talking about knowledge
 representation (KR). What is the most straight forward way to represent
 knowledge? The answer is proposed as "symbolic". Human have gained the
 capability to exchange information and relay history from generation to
 generation as for the invention of symbolic expression, which also enhances our
 logical reasoning under the help of symbolically (usually by native language)
-driven inner voice [?]. Hence the symbolic is still the native way of knowledge
+driven inner voice [6]. Hence the symbolic is still the native way of knowledge
 representation.
 
 ## Limitations of LLM in KR
+
+**Hypothesis-2**. LLM presents superb capabilities in pattern capturing and
+summarization, while showing an intrinsic weakness to involve the encoded
+implicit knowledge in symbols.
 
 We have accumulated a large amount of knowledge in different forms, while the
 symbolic conveys a significant portion. The symbolic is a convenient way to
@@ -70,10 +76,6 @@ substantial related samples in the training datasets. Another explanation for
 the weaknesses of LLM in arithmetic calculation is because we can not have a
 training dataset contains a full enumeration of the symbolic calculation, except
 for a specialized preparation.
-
-**Hypothesis-2**. LLM presents superb capabilities in pattern capturing and
-summarization, while showing an intrinsic weakness to involve the encoded
-implicit knowledge in symbols.
 
 ## General Principles of KR
 
@@ -104,7 +106,7 @@ To address the challenges observed in LLMs, we suggest that knowledge
 representation should be separated from communication and reasoning processes
 and propose a concept of Knowledge Intermediate Representation (KIR) to fulfill
 above principles. Some explicit and flexible structures, for example hypergraph,
-are preferred for KIR. Recent progress in multimodal graph learning [1] also
+are preferred for KIR. Recent progress in multimodal graph learning [5] also
 confirms the importance and powerfulness of selecting a suitable presentation
 paradigm in a sense of fusing multimodal data sources.
 
@@ -129,10 +131,12 @@ principles of interpretation, reusability and integration for KR in a
 declarative method. A Lisp-like language is recommended, as under the hook, each
 list expression with a functor and variables could embody both the implicit and
 explicit knowledge, which is also efficiently handled by other computational
-techniques, such as symbolic regression [?]. Similar consideration is also made
-in the project OpenCog Hyperon for MeTTa language [?]. KIR is the heart of our
+techniques, such as symbolic regression [7]. Similar consideration is also made
+in the project OpenCog Hyperon for MeTTa language [8]. KIR is the heart of our
 framework, playing a role of 'inner voice' for a cognitive process and
 memorizing ingredients in an artificial mind.
+
+![flock-tiny-birds-flying-by-forest](/img/inpost/2023/flock-tiny-birds-flying-by-forest.png)
 
 During the reasoning phase, given user's prompts, tokens are generated
 recursively by the LLM fine-tuned targeting at specific task. This
@@ -150,7 +154,7 @@ space.
 To conquer this limitation, we propose graph-modeled equivalent (e.g.
 hypergraph) of KIR before performing reasoning. Also in the birds-hovering
 example, we could embody the spatial relation of different objects in edges, as
-well as physical knowledge encoded in edge-bundled functors. Ektefaie etc. [1]
+well as physical knowledge encoded in edge-bundled functors. Ektefaie etc. [5]
 employ a unified graph model to perform multimodal learning, which shares the
 similar idea. In the reasoning procedure, the problem is formulated as partial
 substitution of masked subgraphs, in other words, performing subgraph matching
@@ -159,14 +163,31 @@ into two groups, searching paradigm and graph neural network (GNN) paradigm.
 Both could meet our requirements, but have differences in the scale of searching
 space and computing efficiency.
 
-## Why Large Graph Model?
-
-*   Large Graph Model
-
-## Future
-
 ## References
 
-[1] Ektefaie, Y., Dasoulas, G., Noori, A. et al. Multimodal learning with
-graphs. Nat Mach Intell 5, 340–350 (2023).
-https://doi.org/10.1038/s42256-023-00624-6
+[1] Lin T, Wang Y, Liu X, Qiu X. A survey of transformers. AI Open. 2022 Oct 20.
+
+[2] White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar,
+A., Spencer-Smith, J. and Schmidt, D.C., 2023. A prompt pattern catalog to
+enhance prompt engineering with chatgpt. arXiv preprint arXiv:2302.11382.
+
+[3] Dai, D., Dong, L., Hao, Y., Sui, Z., Chang, B. and Wei, F., 2021. Knowledge
+neurons in pretrained transformers. arXiv preprint arXiv:2104.08696.
+
+[4] Li, M. and Zhang, Q., 2023. Does a Neural Network Really Encode Symbolic
+Concept?. arXiv preprint arXiv:2302.13080.
+
+[5] Ektefaie, Y., Dasoulas, G., Noori, A., Farhat, M. and Zitnik, M., 2023.
+Multimodal learning with graphs. Nature Machine Intelligence, pp.1-11.
+
+[6] Alderson-Day, B. and Fernyhough, C., 2015. Inner speech: development,
+cognitive functions, phenomenology, and neurobiology. Psychological bulletin,
+141(5), p.931.
+
+[7] Cornelio, C., Dash, S., Austel, V., Josephson, T.R., Goncalves, J.,
+Clarkson, K.L., Megiddo, N., El Khadir, B. and Horesh, L., 2023. Combining data
+and theory for derivable scientific discovery with AI-Descartes. Nature
+Communications, 14(1), p.1777.
+
+[8] Goertzel, B., 2021. Reflective Metagraph Rewriting as a Foundation for an
+AGI" Language of Thought". arXiv preprint arXiv:2112.08272.
