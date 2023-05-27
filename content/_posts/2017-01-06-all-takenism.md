@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A New Gloom of All-Takenism"
-subtitle: "新拿来主义"
+title: "新拿来主义"
+subtitle: "A New Gloom of All-Takenism"
 date: 2017-01-06
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

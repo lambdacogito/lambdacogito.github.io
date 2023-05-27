@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Brief Tutorial on CNDeepdive"
+title: "CNDeepdive上手体验"
 subtitle: ""
 date: 2018-03-04
 author: "Jamin Chen"

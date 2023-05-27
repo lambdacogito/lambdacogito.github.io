@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The Computability of Metadata (Part 3)"
-subtitle: "从链接数据到属性图的思考"
+title: "元数据的可计算化反 III"
+subtitle: "The Computability of Metadata (Part 3)"
 date: 2018-08-06
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

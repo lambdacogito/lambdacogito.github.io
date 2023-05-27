@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The Computability of Metadata (Part 1)"
-subtitle: "元数据的可计算化反"
+title: "元数据的可计算化反 I"
+subtitle: "The Computability of Metadata (Part 1)"
 date: 2018-01-03
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

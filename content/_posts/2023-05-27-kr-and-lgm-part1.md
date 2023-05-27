@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Knowledge Representation and Large Graph Models (Part 1)"
+title: "Knowledge Representation and Large Graph Models (Part I)"
 subtitle: ""
 date: 2023-05-27
 author: "Jamin Chen"
@@ -8,107 +8,115 @@ header-img: "img/post-bg-universe.jpg"
 tags: ["Sapientia", "LGM", "Knowledge Representation"]
 ---
 
-Summary: this article is a successive of our [project
-Sapientia](http://xiaming.site/2023/03/12/project-sapientia/) for general
-cognitive computing.
+## Intro
 
-## Background
-
-The core of a knowledge computing engine lies at an efficient and computational
-representation of knowledge/logics. This requirement is also one of vital pieces
-of future artificial general intelligence (AGI). Recent success of Transformer
-in natural language field, especially with Large Language Models like GPT-4 and
-LLaMA series, inspires us that neural networks (NNs) with Attention mechanism
-are efficient at condensing information and logics encoded in sequential tokens
-[1]. However these models still remain as black box to uncover the inner
-representation of learned knowledge. The main reason comes from the token
+An efficient representation of knowledge/logics lies at the core of knowledge
+computing engines. This requirement is also one of vital pieces of future
+artificial general intelligence (AGI). Recent success of Transformer architecture in natural
+language field [1], especially with Large Language Models like GPT-4 and LLaMA
+series, inspires us that neural networks (NNs) with Attention mechanism are
+efficient at condensing information and logics encoded in sequential tokens.
+However these models still remain as a black box about learned inner
+representation of knowledge (KR). The main reason comes from the token
 vectorization and high dimensional nature of neural networks with a vast amount
 (tens to hundreds of billions) of parameters and deep layers.
 
+![awesome-transformer-nlp](/img/inpost/2023/awesome-transformer-nlp.png)
+
+We can imagine LLM as a higher dimensional space that absorbs token occurrence
+patterns as vectors, and implicit complex logics encoded in their computational
+relations. Nevertheless we encounter a challenge to interpret, extract and reuse
+those mastered patterns as explicit knowledge outside a trained model. Also, the
+representation of specific knowledge piece or logical relation remains unstable
+as for changes of training context, neural network structure, or the involvement
+of finetuning techniques. Even models trained against the same datasets at
+differing times remain incomparable when considering their inner representations.
+
 **Hypothesis-1**. LLM illustrates the capability to absorb world knowledge as
 well as reasonable logics, because it masters not the world knowledge per se,
-but the rules of knowledge organization in natural languages.
-
-We can imagine there is a higher dimensional space that absorbs and masters the
-token occurrence patterns as vectors, also with their computational relations as
-complex logics. Nevertheless we encounter a challenge to interpret, extract and
-reuse those mastered patterns as explicit knowledge outside a trained model. The
-representation of specific knowledge piece or logical relation remains varying
-as for training context changes, neural network structures, and a bulk of
-fine-tuning techniques. The models trained by different people, even a group of
-models trained with the same datasets at different times are isolated and
-unstable when considering their inner representations.
-
-![awesome-transformer-nlp](/img/inpost/2023/awesome-transformer-nlp.png)
+but the rules of knowledge organization depicted by natural languages.
 
 A portion of community endeavor is put into reversing engineering the black box
 by prompt engineering [2], single neuron interpretation [3], network structural
-analysis [4] etc. We argue that the first principle thinking should be used to
-derive the basic and core problem about what we are talking about knowledge
-representation (KR). What is the most straight forward way to represent
-knowledge? The answer is proposed as "symbolic". Human have gained the
-capability to exchange information and relay history from generation to
-generation as for the invention of symbolic expression, which also enhances our
-logical reasoning under the help of symbolically (usually by native language)
-driven inner voice [6]. Hence the symbolic is still the native way of knowledge
-representation.
+analysis [4] etc. We argue that the first principle thinking should be applied
+to ask the basic and core questions,
+
+* What are we really talking about when saying knowledge representation?
+* And what is the straightforward way to represent knowledge? 
+
+The answer for the first question is addressed below by several proposed
+principles about KR. Our answer of the second one is proposed here as
+"SYMBOLIC", with a footnote that the concepts of representation and reasoning
+should be treated independently. Human race has gained abilities to exchange
+complicated information between each other and convey knowledge between
+generations after the invention of mnemonic symbol systems. This also enhances
+our logical reasoning with a 'inner speech' mechanism [6], usually driven by
+symbolic native language. In this sense the symbolic is still a native way of KR.
 
 ## Limitations of LLM in KR
+
+We have accumulated a large amount of knowledge in different forms, while the
+symbolic conveys a significant portion (other forms like pictures, sounds,
+sculptures). It is convenient and efficient to speak or write with mnemonic
+symbols. What the LLM captures well is the pattern of token sequences, grammar and
+logics being encoded by token organization (location in sentence, occurrence
+frequency, relative long and short range dependency and so on). Nevertheless
+there are many other forms of vital symbolic knowledge that cannot fit into the
+token-sequence model, thus LLM does not deal well with, such as arithmetic
+equations, physical theories, spatial relations.
+
+Many experiments have shown that LLM fails to calculate addition and
+multiplication of arbitrary large numbers, much less complicated mathematical
+theorem understanding. The core reason is that the arithmetic operator, say
+'plus' or '+', is not just a symbol, but also embodies calculating rules
+predefined in math. A sequential regression model heavily relying on sample
+occurrences can not master this kind of implicit knowledge well.
 
 **Hypothesis-2**. LLM presents superb capabilities in pattern capturing and
 summarization, while showing an intrinsic weakness to involve the encoded
 implicit knowledge in symbols.
 
-We have accumulated a large amount of knowledge in different forms, while the
-symbolic conveys a significant portion. The symbolic is a convenient way to
-communicate in speaking and writing. What LLM captures well is the patterns of
-symbol sequences in which grammar and logics are encoded. Nevertheless there are
-other forms of important symbolic knowledge, such as arithmetic equations, that
-LLM can not deal well with. Many experiments have shown that LLM fails to
-calculate addition and multiplication of arbitrary large numbers, much less
-complicated mathematical theorem understanding. The core reason is that the
-symbol 'plus' or '+' is not just a token in a sample sequence, but also with
-calculating rules as predefined in math. A sequential regression model which
-heavily relies on sample occurrences can not master this kind of implicit
-knowledge well. In the natural language scenario, we are always surprised by the
-knowledge scale and grammatical generation of LLM, while ignoring that there are
-substantial related samples in the training datasets. Another explanation for
-the weaknesses of LLM in arithmetic calculation is because we can not have a
-training dataset contains a full enumeration of the symbolic calculation, except
-for a specialized preparation.
+In the natural language scenario, we are always surprised by the knowledge scale
+and grammatical generation of LLM, while ignoring the scale of substantial
+related samples in training datasets and their connections with the generated
+output. Another explanation for arithmetic weakness of LLM is that we are unable
+to have a training dataset containing a full arrangement of all possible number
+calculation.
 
 ## General Principles of KR
 
 For general concept of knowledge, interpretation, reusability and integration
-are the basic practicable demands in our daily life. In a similar sense,
-knowledge representation in cognitive computing or AGI systems should also
-possess these natures. Concretely,
+are fundamental practicable demands in our daily usage. We argue that, in a
+similar sense, knowledge representation in cognitive computing or AGI systems
+should possess these natures as well. Concretely,
 
-* Interpretation, foundation stone for explainable knowledge systems. We could
-    trace the source and reasoning process for specific conclusion. It is the
-    vital part to construct paradigm of knowledge discovery, differing from
-    knowledge squeezing and summarization, Hypothesis-1.
+**Interpretation**, a foundation stone for explainable knowledge systems. We are
+able to trace the source and reasoning process for output conclusion. It is a
+vital part to construct paradigm of knowledge discovery, differing from
+knowledge squeezing and summarization, **Hypothesis-1**.
 
-* Reusability, transferring summarized or discovered knowledge ingredients
-    across different artificial intelligent systems. In LLM, we assume that
-    complex relational dependencies between explicit knowledge ingredients are
-    fetched, as some neural pathways created in creatural brains, being locked
-    as black-boxed representations.
+**Reusability**, transferring summarized or discovered knowledge ingredients
+across different AI systems. In LLM, we assume that complex (implicit)
+relational dependencies between explicit knowledge ingredients are fetched
+(**Hypothesis-2**), similar to the neural pathways created in creatural brains
+when some direct psychological interactions are built. However, these learned
+*implicit* knowledge is locked as black-boxed representations.
 
-* Integration, exemplified as some kind of 'knowledge protocol' between
-    systems. Almost every branch of our theories owns a suite of symbol
-    framework to present its assumptions, axioms, theorems, deductions etc., for
-    both precise communication and interaction with other frameworks.
+**Integration**, exemplified as a kind of 'knowledge protocol' between systems.
+Almost every branch of our theories owns a suite of symbol framework to present
+its assumptions, axioms, theorems, deductions etc. This plays an indispensable
+role in either people communication or system/theoretical framework interaction.
 
 ## Knowledge Intermediate Representation
 
-To address the challenges observed in LLMs, we suggest that knowledge
-representation should be separated from communication and reasoning processes
-and propose a concept of Knowledge Intermediate Representation (KIR) to fulfill
-above principles. Some explicit and flexible structures, for example hypergraph,
-are preferred for KIR. Recent progress in multimodal graph learning [5] also
-confirms the importance and powerfulness of selecting a suitable presentation
-paradigm in a sense of fusing multimodal data sources.
+To address the challenges observed in LLMs, we suggest that *representation*
+should be separated from *communication* and *reasoning* processes in
+knowledge-intensive systems, and a concept of Knowledge Intermediate
+Representation (KIR) is proposed to fulfill above principles. Some explicit and
+flexible structures, for example hypergraph, are preferred for KIR. Recent
+progress in multimodal graph learning [5] also confirms the importance and
+powerfulness of selecting a suitable presentation paradigm in a sense of fusing
+multimodal data sources.
 
 ![LLM vs KIR-LGM](/img/inpost/2023/KIR-LGM.png)
 
@@ -116,32 +124,31 @@ We compare the methodology of KIR with graphical reasoning such as large graph
 model (LGM) or probabilistic graph reasoning (PGS) with current state-of-the-art
 LLM technique, as illustrated in above figure. Here we consider the
 interdisciplinary knowledge presented in symbols, such as natural languages,
-system control instructions, physical theories and so on. We treat the input
+system control instructions and physical theories. We treat the input
 human-readable symbols as a human-system interaction interface, defined as the
 communication part. In left LLM way, all symbolic knowledge in training samples
-are converted into token sequence and fed into the neural model where its
-encoder-decoder structure with attention mechanism is efficient at parallel
-training and capturing the long-term dependencies between tokens. Its
-limitations are coupling of representation and reasoning, with challenges to
+are converted into token sequence and fed into the neural model, where its
+encoder-decoder structure with attention mechanism is efficient at training
+parallelly and capturing the long-term dependencies between tokens. Its
+limitation is coupling of representation and reasoning, and challenges to
 fulfill those KR principles depicted above.
 
-In our proposed methodology, the general knowledge intermediate representation
-part is introduced, as the right KIR way in above figure. It embodies the
-principles of interpretation, reusability and integration for KR in a
-declarative method. A Lisp-like language is recommended, as under the hook, each
-list expression with a functor and variables could embody both the implicit and
-explicit knowledge, which is also efficiently handled by other computational
-techniques, such as symbolic regression [7]. Similar consideration is also made
-in the project OpenCog Hyperon for MeTTa language [8]. KIR is the heart of our
-framework, playing a role of 'inner voice' for a cognitive process and
-memorizing ingredients in an artificial mind.
-
-![flock-tiny-birds-flying-by-forest](/img/inpost/2023/flock-tiny-birds-flying-by-forest.png)
+In our proposed methodology, the general KIR part is introduced, as the right
+line in above figure. It embodies the principles of interpretation, reusability
+and integration for KR in a declarative method. A Lisp-like declarative language
+is recommended. Under the hook, each list expression with a functor and
+variables could embody both the implicit and explicit knowledge, which is also
+efficiently handled by other computational techniques, such as symbolic
+regression [7]. Similar consideration is also made in the project OpenCog
+Hyperon for MeTTa language [8]. KIR is the kernel of our framework, playing a
+role like 'inner speech' for a cognitive process [6], memorizing ingredients in
+an artificial mind model (An interesting example is the generative agents from
+[9] whose KIR is natural language for memorization).
 
 During the reasoning phase, given user's prompts, tokens are generated
 recursively by the LLM fine-tuned targeting at specific task. This
-sequence-in-sequence-out manner limits LLM's application in scenarios that the
-information cannot be transformed into token sequence properly. For example,
+sequence-in-sequence-out manner constrains LLM's application in scenarios that
+the information cannot be transformed into token sequence properly. For example,
 when human looking at a video of a flock of birds hovering above the forest,
 birds' flying patterns and landing location would be inferred and predicted with
 our born sense of space and understanding of spatial relation of birds, sky and
@@ -150,6 +157,8 @@ Although some showcases imply that LLM can answer space-concept-related physical
 reasoning question, it is because that similar sequences describing related
 problems are present in the training set and encoded in the hyper-parameter
 space.
+
+![flock-tiny-birds-flying-by-forest](/img/inpost/2023/flock-tiny-birds-flying-by-forest.png)
 
 To conquer this limitation, we propose graph-modeled equivalent (e.g.
 hypergraph) of KIR before performing reasoning. Also in the birds-hovering
@@ -162,6 +171,21 @@ given a variable-embedded graph (variable grounding). We categorize techniques
 into two groups, searching paradigm and graph neural network (GNN) paradigm.
 Both could meet our requirements, but have differences in the scale of searching
 space and computing efficiency.
+
+Contd. We leave the discussion of graph-centric paradigm and its integration
+with KRI in next part.
+
+## Summary
+
+This article shows a blueprint of my [project
+Sapientia](http://xiaming.site/2023/03/12/project-sapientia/) for general
+cognitive/knowledge computing. It summarized my recent thinking about knowledge
+representation and expected related principles to develop a knowledge-intensive
+system. After a technical deduction, KIR seems to pave a new way to integrate
+both explicit and implicit knowledge in a unified framework. Also graph-centric
+architectures have shown potentials to perform reasoning on KIR base.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 ## References
 
@@ -191,3 +215,7 @@ Communications, 14(1), p.1777.
 
 [8] Goertzel, B., 2021. Reflective Metagraph Rewriting as a Foundation for an
 AGI" Language of Thought". arXiv preprint arXiv:2112.08272.
+
+[9] Park, J.S., O'Brien, J.C., Cai, C.J., Morris, M.R., Liang, P. and Bernstein,
+M.S., 2023. Generative agents: Interactive simulacra of human behavior. arXiv
+preprint arXiv:2304.03442.

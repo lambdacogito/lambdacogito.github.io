@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Process Gis Shapefile With Graph Tools"
+title: "Process GIS Shapefile With Graph Tools"
 subtitle: ""
 date: 2016-12-19
 author: "Jamin Chen"
