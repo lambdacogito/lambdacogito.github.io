@@ -178,9 +178,9 @@ with KRI in next part.
 ## Summary
 
 This article shows a blueprint of my [project
-Sapientia](http://xiaming.site/2023/03/12/project-sapientia/) for general
-cognitive/knowledge computing. It summarized my recent thinking about knowledge
-representation and expected related principles to develop a knowledge-intensive
+Sapientia](http://xiaming.site/2023/03/12/project-sapientia/) towards general
+cognitive/knowledge computing infrastructure. It summarized my recent thinking
+about KR and expected related principles to develop a knowledge-intensive
 system. After a technical deduction, KIR seems to pave a new way to integrate
 both explicit and implicit knowledge in a unified framework. Also graph-centric
 architectures have shown potentials to perform reasoning on KIR base.
@@ -219,3 +219,6 @@ AGI" Language of Thought". arXiv preprint arXiv:2112.08272.
 [9] Park, J.S., O'Brien, J.C., Cai, C.J., Morris, M.R., Liang, P. and Bernstein,
 M.S., 2023. Generative agents: Interactive simulacra of human behavior. arXiv
 preprint arXiv:2304.03442.
+
+Acknowledge of images, 'awesome-transformer-nlp' attributed to project
+[awesome-transformer-nlp](https://github.com/cedrickchee/awesome-transformer-nlp)
