@@ -85,12 +85,12 @@ calculation.
 
 ## General Principles of KR
 
-For general concept of knowledge, interpretation, reusability and integration
+For general concept of knowledge, interpretability, reusability and integration
 are fundamental practicable demands in our daily usage. We argue that, in a
 similar sense, knowledge representation in cognitive computing or AGI systems
 should possess these natures as well. Concretely,
 
-**Interpretation**, a foundation stone for explainable knowledge systems. We are
+**Interpretability**, a foundation stone for explainable knowledge systems. We are
 able to trace the source and reasoning process for output conclusion. It is a
 vital part to construct paradigm of knowledge discovery, differing from
 knowledge squeezing and summarization, **Hypothesis-1**.
