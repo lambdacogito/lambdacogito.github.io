@@ -7,7 +7,11 @@ permalink: /poems/
 navigation_weight: 10
 ---
 
-{% for post in site.poems %}
+{%- assign _sorted_list = site.poems -%}
+{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+{%- assign _sorted_list = _sorted_list | reverse -%}
+
+{% for post in _sorted_list %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
