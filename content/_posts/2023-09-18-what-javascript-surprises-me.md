@@ -8,21 +8,21 @@ header-img: "img/post-bg-universe.jpg"
 tags: ["Computer Languages"]
 ---
 
-# Intro
+## 背景
 
-我比较喜欢研究计算机语言。所有的计算机语言来自于历史上诸多计算机学者和工程人员的
-努力。每种语言都有生而为之的特征，是与生俱来的。每年都有诸多计算机语言诞生，而追
-寻每种语言背后的故事以及了解它们的与众不同的特点，很有意思。这是What computer
-languages surprise me系列文章之一，记录某种语言的设计特点在我的认知体系中带来某
-种惊讶或惊喜的点。有点《管锥编》的意思，仅记录个人体验。这篇有关Javascirpt的语言
-特点，对比的背景是Java/CPP/Python等。
+我比较喜欢研究计算机语言理论。所有的计算机语言来自于历史上诸多计算机学者和工程人
+员的努力。每种语言都有生而为之的特征。每年都有诸多计算机语言诞生，而追寻每种语言
+背后的故事以及了解它们的与众不同的特点，很有意思。这是What computer languages
+surprise me系列文章之一，记录某种语言的设计特点在我的认知体系中带来某种惊讶或惊
+喜的点。有点《管锥编》的意思，仅记录个人体验。这篇有关Javascirpt的语言特点，对比
+的背景是Java/CPP/Python等。
 
-# 基础
+## 基础
 
 *   灵活的变量声明范围：var声明范围为function or script scoped，let和const是block-scoped
 *   声明提升：var可提升，默认为undefined; let和const不可提升，否则抛出referror
 
-# 控制流
+## 控制流
 
 *   throw可以抛出任意类型
 
@@ -33,7 +33,7 @@ languages surprise me系列文章之一，记录某种语言的设计特点在�
 *   for语法：for...in对object属性名进行遍历，或者对可便利变量如array values进行遍历；
     for...of对object所有可遍历属性的值进行遍历，针对不同属性调用不同的遍历器。
 
-# 函数
+## 函数
 
 *   func参数都是基于值传递，即更改参数值不影响外部传入参数；但是如果传入参数是obj或
     arr，修改obj属性或者arr value会同样修改外部对象属性。逻辑上并不矛盾，基于参数传
@@ -48,14 +48,14 @@ languages surprise me系列文章之一，记录某种语言的设计特点在�
 *   Arrow function (=>): 更短的函数声明，不绑定this，同时没有arguments, super,
     new.target等；在arrow function出现以前，所有函数须有绑定的this。
 
-# 操作符
+## 操作符
 
 *   Comma为操作符之一，二元操作符，用于for loop condition
 
 *   Array的\[]操作符，既是索引操作符根据index获取值，同时也是属性操作符根据值获取
     index。
 
-# 对象与类
+## 对象与类
 
 *   JS建立在一套简单灵活的Object概念之上
 
@@ -82,3 +82,18 @@ languages surprise me系列文章之一，记录某种语言的设计特点在�
 *   Class构造函数通过constructor()定义，literally
 
 *   Class private变量通过#varname定义
+
+## 其他
+
+*   Typed array是个奇怪的名称，更具体应该是typed buffer或者typeless array。和通常
+    意义上的array并无相似之处，是一组特定长度的连续的内存空间。
+
+*   任何类型都可以成为迭代器Iterator，只需要1）实现next() 方法；2）返回值包含value
+    和done属性。注：这种有点类似python和go的duck typed接口声明，是一种很灵活的类
+    型扩展机制。
+
+*   JS支持一种简洁生成迭代器的函数，声明为function\*和yeild关键字。和Python yeild类
+    似，但是没有后者简洁。
+
+*   Iterables：特指支持for...of的遍历语法对象。一个对象如果想成为iterables，需要增
+    加Symbol.iterator实现，其实现内容通常为function\* 定义的生成迭代器。
