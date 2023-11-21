@@ -60,7 +60,7 @@ symbolic conveys a significant portion (other forms like pictures, sounds,
 sculptures). It is convenient and efficient to speak or write with mnemonic
 symbols. What the LLM captures well is the pattern of token sequences, grammar and
 logics being encoded by token organization (location in sentence, occurrence
-frequency, relative long and short range dependency and so on). Nevertheless
+frequency, relative long- and short-range dependency and so on). Nevertheless
 there are many other forms of vital symbolic knowledge that cannot fit into the
 token-sequence model, thus LLM does not deal well with, such as arithmetic
 equations, physical theories, spatial relations.
@@ -112,7 +112,7 @@ role in either people communication or system/theoretical framework interaction.
 To address the challenges observed in LLMs, we suggest that *representation*
 should be separated from *communication* and *reasoning* processes in
 knowledge-intensive systems, and a concept of Knowledge Intermediate
-Representation (KIR) is proposed to fulfill above principles. Some explicit and
+Representation (KIR) is proposed to fulfil above principles. Some explicit and
 flexible structures, for example hypergraph, are preferred for KIR. Recent
 progress in multimodal graph learning [5] also confirms the importance and
 powerfulness of selecting a suitable presentation paradigm in a sense of fusing
@@ -131,7 +131,7 @@ are converted into token sequence and fed into the neural model, where its
 encoder-decoder structure with attention mechanism is efficient at training
 parallelly and capturing the long-term dependencies between tokens. Its
 limitation is coupling of representation and reasoning, and challenges to
-fulfill those KR principles depicted above.
+fulfil those KR principles depicted above.
 
 In our proposed methodology, the general KIR part is introduced, as the right
 line in above figure. It embodies the principles of interpretation, reusability
