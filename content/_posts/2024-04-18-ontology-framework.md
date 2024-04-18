@@ -8,8 +8,6 @@ header-img: "img/post-bg-universe.jpg"
 tags: ["Ontology", "Knowledge Representation"]
 ---
 
-# Introduction to Ontology Framework
-
 ## 概述
 
 本文总结当前主流的语义网络（知识图谱）领域的本体描述框架，包括理论，语言和系统。
