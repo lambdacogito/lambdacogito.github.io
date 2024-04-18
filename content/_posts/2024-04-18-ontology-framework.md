@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Introduction to Ontology Framework"
-subtitle: ""
+title: "本体论框架"
+subtitle: "Ontology Framework"
 date: 2024-04-18
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
