@@ -145,8 +145,8 @@ KRL）的发展。回顾这些历史， 有助于我们在当下技术发展阶�
 
 在基于Transformer的大语言模型的深刻技术变革中，本体论相关技术以其强逻辑性、可解
 释性，有潜力实现对大语言模型隐式知识表达的融合和创新。近两年已有不少有趣的工作和
-项目出现，例如知识图谱和LLM的结合应用、基于LLM的Ontology Learning等，这方面未来
-值得花篇幅单独介绍。
+项目出现，例如知识图谱和LLM的结合应用[3]、基于LLM的Ontology Learning[4]等，这方
+面未来值得花篇幅单独介绍。
 
 另一方面，本世纪以来，人类在软件工程化（例如数据计算和信息提取领域），实现了长足
 进步，尤其在开源软件社区蓬勃发展的驱动下。早期以标记符号为主的知识表示语言（例如
@@ -157,5 +157,9 @@ OWL）开始展现出不足，尤其是对于计算型知识（Computational Kno
 
 ## 参考
 
-* https://en.m.wikipedia.org/wiki/Ontology_(information_science)
-* https://en.m.wikipedia.org/wiki/Ontology_language
+* [1] https://en.m.wikipedia.org/wiki/Ontology_(information_science)
+* [2] https://en.m.wikipedia.org/wiki/Ontology_language
+* [3] Neuhaus, Fabian. (2023). Ontologies in the era of large language models – a
+  perspective. Applied Ontology. 18. 399-407. 10.3233/AO-230072. 
+* [4] Hamed Babaei Giglou etc., LLMs4OL: Large Language Models for Ontology
+  Learning, https://arxiv.org/abs/2307.16648
