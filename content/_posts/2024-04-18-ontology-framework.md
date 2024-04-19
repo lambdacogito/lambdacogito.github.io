@@ -20,52 +20,55 @@ tags: ["Ontology", "Knowledge Representation"]
 符号知识系统的发展，从最初的通用问题解决器GPS 到最近的语义网络和知识图谱，经历了
 多次的基础理论迭代和系统发展，这里简要总结（Wikipedia通过ChatGPT总结生成）。
 
-* **1959**
-    * General Problem Solver (GPS) System，由Allen Newell & Herbert A. Simon提出
-      关于规划和分解解决问题的数据结构。
-    * Advice Taker，John McCarthy提出，提倡使用predicate calculus进行常识推理。
+~1959:
 
-* **1960s**
-    * Resolution Method，John Alan Robinson提出，提出利用一阶逻辑进行自动化定理
-      证明。
-    * Situation Calculus，John McCarthy and Pat Hayes提出，对场景和因果知识通过
-      逻辑表示。
+* General Problem Solver (GPS) System，由Allen Newell & Herbert A. Simon提出关于
+  规划和分解解决问题的数据结构。
+* Advice Taker，John McCarthy提出，提倡使用predicate calculus进行常识推理。
 
-* **1970s**
-    * 逻辑编程和Prolog，提出了一种将Horn子句映射成目标约减过程的解法，并发展了系
-      统化的计算机语言。
-    * Frame Concept，Marvin Minsky提出，可认为一次重要的发展节点，消弭了长期关于
-      知识的基于本体论的静态表示和基于逻辑推理的过程知识表示，提出Frame概念表示
-      本体及问题解决策略。Frame概念受到面向对象理念发展的影响，二者有诸多相似之
-      处。目前主流的知识表示语言，与Frame概念一脉相承。
+1960s:
 
-* **1980s**
-    * Knowledge Engineering Environment (KEE)，Intellicorp公司提出，在以frame概
-      念为基础的知识表示之上，增加了规则引擎。
-    * KL-ONE，一种frame语言，包含了规范预发和自动推理引擎。
-    * Cyc，Doug Lenat创立的Cyc公司，后发布过OpenCyc，其目标为基于frame的知识表示，
-      构建一个常识推理系统。
-    * 知识表示假设，Brian C. Smith首次提出知识表示假设(Knowledge Representation
-      Hypertheses)，对于如何表示知识进行了理论化表述，引用原文：
+* Resolution Method，John Alan Robinson提出，提出利用一阶逻辑进行自动化定理证明。
+* Situation Calculus，John McCarthy and Pat Hayes提出，对场景和因果知识通过逻辑
+  表示。
 
-        > Any mechanically embodied intelligent process will be comprised of structural
-        ingredients that a) we as external observers naturally take to represent a
-        propositional account of the knowledge that the overall process exhibits, and b)
-        independent of such external semantic attribution, play a formal but causal and
-        essential role in engendering the behavior that manifests that knowledge.
+1970s:
 
-* **Since 2000**
-    * Semantic Web，由W3C组织提出，又称Web 3.0，基于RDF、OWL等标准化技术实现。
-      Knowledge Graph也属于这一技术领域。Berners-Lee在1999年这样表达自己对于语义
-      网络的Vision（结合当前AIGC的发展仍然具有启发性）：
+* 逻辑编程和Prolog，提出了一种将Horn子句映射成目标约减过程的解法，并发展了系统化
+  的计算机语言。
+* Frame Concept，Marvin Minsky提出，可认为一次重要的发展节点，消弭了长期关于知识
+  的基于本体论的静态表示和基于逻辑推理的过程知识表示，提出Frame概念表示本体及问
+  题解决策略。Frame概念受到面向对象理念发展的影响，二者有诸多相似之处。目前主流
+  的知识表示语言，与Frame概念一脉相承。
 
-        > I have a dream for the Web [in which computers] become capable of
-        analyzing all the data on the Web – the content, links, and transactions
-        between people and computers. A "Semantic Web", which makes this
-        possible, has yet to emerge, but when it does, the day-to-day mechanisms
-        of trade, bureaucracy and our daily lives will be handled by machines
-        talking to machines. The "intelligent agents" people have touted for
-        ages will finally materialize
+1980s:
+
+* KEE，Intellicorp公司提出知识工程环境，在以frame概念为基础的知识表示之上，增加
+  了规则引擎。
+* KL-ONE，一种frame语言，包含了规范预发和自动推理引擎。
+* Cyc，Doug Lenat创立的Cyc公司，后发布过OpenCyc，其目标为基于frame的知识表示，构
+  建一个常识推理系统。
+* 知识表示假设，Brian C. Smith首次提出知识表示假设(Knowledge Representation
+  Hypertheses)，对于如何表示知识进行了理论化表述，引用原文：
+
+    > Any mechanically embodied intelligent process will be comprised of structural
+    ingredients that a) we as external observers naturally take to represent a
+    propositional account of the knowledge that the overall process exhibits, and
+    b) independent of such external semantic attribution, play a formal but causal
+    and essential role in engendering the behavior that manifests that knowledge.
+
+2000~:
+
+* Semantic Web，由W3C组织提出，又称Web 3.0，基于RDF、OWL等标准化技术实现。
+Knowledge Graph也属于这一技术领域。Berners-Lee在1999年这样表达自己对于语义网络的
+Vision（结合当前AIGC的发展仍然具有启发性）：
+
+    > I have a dream for the Web [in which computers] become capable of
+    analyzing all the data on the Web – the content, links, and transactions between
+    people and computers. A "Semantic Web", which makes this possible, has yet to
+    emerge, but when it does, the day-to-day mechanisms of trade, bureaucracy and
+    our daily lives will be handled by machines talking to machines. The
+    "intelligent agents" people have touted for ages will finally materialize
 
 
 ## 本体论
