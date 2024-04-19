@@ -20,19 +20,19 @@ tags: ["Ontology", "Knowledge Representation"]
 符号知识系统的发展，从最初的通用问题解决器GPS 到最近的语义网络和知识图谱，经历了
 多次的基础理论迭代和系统发展，这里简要总结（Wikipedia通过ChatGPT总结生成）。
 
-~1959:
+**~1959**
 
 * General Problem Solver (GPS) System，由Allen Newell & Herbert A. Simon提出关于
   规划和分解解决问题的数据结构。
 * Advice Taker，John McCarthy提出，提倡使用predicate calculus进行常识推理。
 
-1960s:
+**1960s**
 
 * Resolution Method，John Alan Robinson提出，提出利用一阶逻辑进行自动化定理证明。
 * Situation Calculus，John McCarthy and Pat Hayes提出，对场景和因果知识通过逻辑
   表示。
 
-1970s:
+**1970s**
 
 * 逻辑编程和Prolog，提出了一种将Horn子句映射成目标约减过程的解法，并发展了系统化
   的计算机语言。
@@ -41,7 +41,7 @@ tags: ["Ontology", "Knowledge Representation"]
   题解决策略。Frame概念受到面向对象理念发展的影响，二者有诸多相似之处。目前主流
   的知识表示语言，与Frame概念一脉相承。
 
-1980s:
+**1980s**
 
 * KEE，Intellicorp公司提出知识工程环境，在以frame概念为基础的知识表示之上，增加
   了规则引擎。
@@ -57,7 +57,7 @@ tags: ["Ontology", "Knowledge Representation"]
     b) independent of such external semantic attribution, play a formal but causal
     and essential role in engendering the behavior that manifests that knowledge.
 
-2000~:
+**2000~**
 
 * Semantic Web，由W3C组织提出，又称Web 3.0，基于RDF、OWL等标准化技术实现。
 Knowledge Graph也属于这一技术领域。Berners-Lee在1999年这样表达自己对于语义网络的
