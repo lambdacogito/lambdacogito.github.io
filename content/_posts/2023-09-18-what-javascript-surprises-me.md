@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "JS启示录"
-subtitle: "What Javascript Surprises Me"
+title: "What Javascript Surprises Me"
 date: 2023-09-18
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
