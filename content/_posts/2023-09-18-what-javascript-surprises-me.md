@@ -4,7 +4,7 @@ title: "What Javascript Surprises Me"
 date: 2023-09-18
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["Computer Languages"]
+tags: ["ComputerLanguages"]
 ---
 
 ## 背景
