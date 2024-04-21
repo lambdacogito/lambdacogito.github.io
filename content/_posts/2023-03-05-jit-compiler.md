@@ -5,7 +5,7 @@ subtitle: ""
 date: 2023-03-05
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["ComputerLanguages", "Java", "Compiler"]
+tags: ["Computer Language", "Java", "Compiler"]
 ---
 
 The JIT compilation consists of five stages:

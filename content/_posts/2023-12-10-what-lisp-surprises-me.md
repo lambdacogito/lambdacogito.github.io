@@ -4,7 +4,7 @@ title: "What Lisp Surprises Me"
 date: 2023-12-10
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["ComputerLanguages", "LISP"]
+tags: ["Computer Language", "LISP"]
 ---
 
 ## S-expr and evaluation
