@@ -67,10 +67,4 @@ iteration of data technologies.
 
 #### Life
 
-Deep into the heart, family is my treasure. All the stories we formulate for
-ourselves would be blowing away in the wind of time. The existence of ME and its
-all ambitious aims are about meanings to conquer against the aimlessness of
-lives. By the way, this is not pessimism, but on the contrary, real optimism. 
-
-ME have hobbies of Chinese calligraphy, aquarium, travelling, reading and
-thinking. Anything would be better to do with my family.
+Family is the treasure at the core of my heart. Without them, all the stories we create for ourselves would be swept away by the winds of time. The essence of who I am, along with my ambitious goals, is rooted in finding meaning amidst the aimlessness of life. This perspective isn't one of pessimism; rather, it is true optimism. I have a passion for Chinese calligraphy, maintaining an aquarium, traveling, reading, and reflecting. However, everything is better when shared with family.
