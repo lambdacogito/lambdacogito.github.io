@@ -54,7 +54,7 @@ hood of Wolfram Alpha, as I was attracted and called on by its efficiency and
 unification of multi-paradigm data representations. These features lay in the
 core of a successful data-lake warehouse. When I realized that it was hard to
 fulfill my experimental thoughts on a commercial product with a heavy tech debt,
-the [HadronMind community](https://github.com/hadronmind) was constructed to do
+the [LambdaCogito community](https://github.com/lambdacogito) was constructed to do
 these proof of concepts (PoC).
 
 With nearly seven years of industrial experience, I have learned a bunch of
