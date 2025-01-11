@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Neurosymbolic AI (part I): why self-explanation matters"
-subtitle: ""
+title: "Neurosymbolic AI (Part I)"
+subtitle: "Why self-explanation matters"
 date: 2025-01-11
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["Neurosymbolic"]
+tags: ["Neurosymbolic", "Knowledge Representation", "Artificial Intelligence"]
 ---
 
 The success of LLMs has triggered a new wave of prosperity of AI researches.
