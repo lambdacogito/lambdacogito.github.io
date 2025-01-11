@@ -46,12 +46,7 @@ solutions to support AI systems with self-explanation.
 
 ## What is Self-Explanation
 
-Self-explanation addresses the research direction of explainable AI models, in
-which we can understand how the AI systems work and control their behaviors
-when necessary. What locates at the core of self-explanation is the representation of a
-**concept**. Understanding the significance of conceptual representation in
-artificial intelligence is akin to understanding the space-time dimension in
-Einstein's relativity theory.
+Self-explanation is a key aspect of research into explainable AI models, enabling us to understand how AI systems operate and to control their behavior when necessary. At the heart of self-explanation lies the representation of concepts. Grasping the importance of conceptual representation in artificial intelligence is comparable to understanding the role of the space-time dimension in Einstein’s theory of relativity.
 
 In traditional semantic web, a concept is recorded as a symbol (e.g., 'Love' in
 English and '愛' in Chinese). In artificial neural networks (ANN), a concept is
