@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Neurosymbolic AI (Part I)"
+title: "Neuro-symbolic AI"
 subtitle: "Why self-explanation matters"
 date: 2025-01-11
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["Neurosymbolic", "Knowledge Representation", "Artificial Intelligence"]
+tags: ["Neuro-symbolic", "Knowledge Representation", "Artificial Intelligence"]
 ---
 
 The success of LLMs has triggered a new wave of prosperity of AI researches.
@@ -111,7 +111,7 @@ attention transformations, residual optimizations, and more. Nevertheless,
 continued progress in cognitive and brain sciences is essential to unraveling
 the complexities of cerebral intelligence.
 
-## Neurosymbolic AI
+## Neuro-symbolic AI
 
 Another potential solution for developing self-explainable systems is the
 integration of symbolic technologies. Traditional symbolic AI faced significant
@@ -139,7 +139,7 @@ in managing and maintaining the knowledge base effectively.
 ## Summary
 
 In this post, I have outlined the essentials and a potential solution, i.e.,
-neurosymbolic AI, for explainable AI systems. The next posts will delve into
+neuro-symbolic AI, for explainable AI systems. The next posts will delve into
 two other fundamental principles: self-reference and active inference.
 
 ## References
