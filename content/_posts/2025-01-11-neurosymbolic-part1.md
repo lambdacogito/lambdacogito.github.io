@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Neuro-symbolic AI"
+title: "Neuro-symbolic AI (Part I)"
 subtitle: "Why self-explanation matters"
 date: 2025-01-11
 author: "Jamin Chen"

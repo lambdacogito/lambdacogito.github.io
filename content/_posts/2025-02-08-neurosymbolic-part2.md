@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Neuro-symbolic AI"
+title: "Neuro-symbolic AI (Part II)"
 subtitle: "Why self-reference matters"
 date: 2025-02-08
 author: "Jamin Chen"
