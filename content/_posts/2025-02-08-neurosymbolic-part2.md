@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Neuro-symbolic AI (Part II)"
-subtitle: "Why self-reference matters"
+title: "Why self-reference matters in AI"
 date: 2025-02-08
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

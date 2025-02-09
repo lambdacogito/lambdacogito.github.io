@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Neuro-symbolic AI (Part I)"
-subtitle: "Why self-explanation matters"
+title: "Why self-explanation matters in AI"
 date: 2025-01-11
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
