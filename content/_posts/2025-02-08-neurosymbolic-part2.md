@@ -77,7 +77,7 @@ computers.
 By analogy, we propose a bold prediction: large, unified language models
 represent an intermediate stage in the evolution of AI architectures. The
 next-generation mainstream approach is likely to be Mixture of Experts (MoE)
-models—systems that enhance predictive accuracy (consistency) by incorporating
+models, systems that enhance predictive accuracy (consistency) by incorporating
 expert models with specialized but limited completeness in specific domains.
 These architectures may provide a more balanced trade-off between completeness
 and consistency, pushing AI development forward.
@@ -118,15 +118,33 @@ memory cache—prepended to each query. This mechanism helps maintain consistenc
 in the character’s internal state by feeding information into the attention
 modules.
 
-A more profound and human-like integration of self-reference would involve
-embedding it directly within the attention mechanism itself. Achieving this
-requires rethinking and innovating the attention structures within AI
-architectures.
+In the MoE architecture, an alternative approach to self-reference involves
+employing a dedicated expert model that encapsulates the concept of "I". The
+output of this shared self-reference expert receives greater weight when the
+input aligns with the system’s global internal state. However, this method may
+diminish the knowledge coverage of other non-shared experts, ultimately
+reducing the generality of global training.
+
+A more advanced and human-like integration of self-reference would embed it
+directly within the attention mechanism itself. Achieving this requires
+reimagining and innovating attention structures within AI architectures. In
+neuro-symbolic AI, the attention module can take different forms, such as a
+sub-graph correlation matrix rather than a conventional vector distance matrix.
+In this context, the core aspect of self-reference, when represented as a graph,
+can be directly embedded within the correlation matrix. This mechanism will be
+explored in greater depth in future blogs.
+
+## Summary
+
+In this blog, the concept of self-reference in the context Godel's
+incompleteness theorems and its implications for AI are explored. It is shown
+that self-reference is central to guide and advance future AI systems, such as
+agentic or robotic systems.
 
 ## References
 
-* [1] [Gödel: Incompleteness Architect – Limits of Knowledge in AI Era](https://web.archive.org/web/20250208070520/https://editverse.com/kurt-godel-incompleteness-theorems-logical-paradoxes/)
+[1] [Gödel: Incompleteness Architect – Limits of Knowledge in AI Era](https://web.archive.org/web/20250208070520/https://editverse.com/kurt-godel-incompleteness-theorems-logical-paradoxes/)
 
-* [2] [Gödel's Incompleteness Theorem is Not an Obstacle to Artificial Intelligence](https://www.sdsc.edu/~jeff/Godel_vs_AI.html)
+[2] [Gödel's Incompleteness Theorem is Not an Obstacle to Artificial Intelligence](https://www.sdsc.edu/~jeff/Godel_vs_AI.html)
 
-* [3] Pérez, J., Barceló, P., & Marinkovic, J. (2021). Attention is turing-complete. Journal of Machine Learning Research, 22(75), 1-35.
+[3] Attention is turing-complete. Journal of Machine Learning Research, 2021, [link](https://jmlr.org/papers/volume22/20-302/20-302.pdf)
