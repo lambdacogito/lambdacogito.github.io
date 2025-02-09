@@ -128,7 +128,7 @@ reducing the generality of global training.
 A more advanced and human-like integration of self-reference would embed it
 directly within the attention mechanism itself. Achieving this requires
 reimagining and innovating attention structures within AI architectures. In
-neuro-symbolic AI, the attention module can take different forms, such as a
+**neuro-symbolic AI**, the attention module can take different forms, such as a
 sub-graph correlation matrix rather than a conventional vector distance matrix.
 In this context, the core aspect of self-reference, when represented as a graph,
 can be directly embedded within the correlation matrix. This mechanism will be
