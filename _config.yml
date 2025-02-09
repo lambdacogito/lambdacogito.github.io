@@ -14,7 +14,7 @@ collections:
   poems:
     output: true
   projects:
-    output: true
+    output: false
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -65,7 +65,7 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: [your track id]
+ba_track_id: 933a7ca2adb3fad09e99a8fc2f538d69
 
 # Sidebar settings
 sidebar: true

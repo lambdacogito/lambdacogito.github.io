@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Javascript Surprises Me"
+title: "Zen of Computer Language: JS"
 date: 2023-09-18
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

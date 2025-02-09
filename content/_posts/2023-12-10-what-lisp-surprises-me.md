@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Lisp Surprises Me"
+title: "Zen of Computer Language: Lisp"
 date: 2023-12-10
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"

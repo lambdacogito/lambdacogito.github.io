@@ -1,11 +1,11 @@
 {
-  "name": "Dr. Jamin Chen's Home",
-  "short_name": "D.C. Blog",
+  "name": "Dr. Jamin Chen's Blog",
+  "short_name": "DC Blog",
   "description": "Researcher on Knowledge Computing. Ph.D in Behavioral Informatics.",
   "icons": [
     {
-      "src": "icons/128.png",
-      "sizes": "128x128",
+      "src": "icons/192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
