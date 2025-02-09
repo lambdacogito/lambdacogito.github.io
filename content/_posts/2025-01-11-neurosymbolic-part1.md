@@ -8,12 +8,12 @@ header-img: "img/post-bg-universe.jpg"
 tags: ["Neuro-symbolic", "Knowledge Representation", "Artificial Intelligence"]
 ---
 
+## Background
+
 The success of LLMs has triggered a new wave of prosperity of AI researches.
 The market, supply chains and end-users have been educated in a unprecedented
 depth about AI capabilities in this wave. This is another fresh start toward
 the future of intelligent world.
-
-## Motivation
 
 Project [LaCogito](https://github.com/lambdacogito) was initiated to explore
 the foundational architecture of next-generation AI—an AI system characterized
