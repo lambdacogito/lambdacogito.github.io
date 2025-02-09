@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Knowledge Representation and Large Graph Models (Part I)"
+title: "Knowledge Representation (Part I)"
 subtitle: ""
 date: 2023-05-27
 author: "Jamin Chen"
 header-img: "img/post-bg-universe.jpg"
-tags: ["Sapientia", "LGM", "Knowledge Representation"]
+tags: ["Large Graph Model", "Knowledge Representation", "Neuro-symbolic"]
 ---
 
 ## Intro
@@ -177,9 +177,8 @@ with KRI in next part.
 
 ## Summary
 
-This article shows a blueprint of my [project
-Sapientia](http://xiaming.site/2023/03/12/project-sapientia/) towards general
-cognitive/knowledge computing infrastructure. It summarized my recent thinking
+This article shows a blueprint of my [project LaCogito](http://xiaming.site/2023/03/12/project-sapientia/)
+towards general cognitive/knowledge computing infrastructure. It summarized my recent thinking
 about KR and expected related principles to develop a knowledge-intensive
 system. After a technical deduction, KIR seems to pave a new way to integrate
 both explicit and implicit knowledge in a unified framework. Also graph-centric
