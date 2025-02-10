@@ -12,8 +12,6 @@ collections_dir: content
 collections:
   poems:
     output: true
-  projects:
-    output: false
 
 # Publish posts or collection documents with a future date.
 future: true
