@@ -7,4 +7,4 @@ header-img: "img/post-bg-universe.jpg"
 tags: ["Neuro-symbolic", "Knowledge Representation", "Artificial Intelligence"]
 ---
 
-## Background
+## Black-box thought experiment
