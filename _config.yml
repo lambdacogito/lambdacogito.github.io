@@ -2,10 +2,9 @@ title: inno.trek
 SEOTitle: inno.trek
 header-img: "img/about-bg-walle.jpg"
 email: chenxm35@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:
   Here is DrJaminChen's personal blog. Sharing thinking about computer intellegence,
   arts, and on the disordered world. Learn more beyond what you can imagine.
-keyword: ""
 url: "https://xiaming.site"
 baseurl: ""
 
@@ -20,7 +19,7 @@ collections:
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     fuckinmylife
 zhihu_username:     xiamingc
 github_username:    caesar0301
@@ -31,14 +30,12 @@ linkedin_username:  xiamingc
 # Build settings
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true     # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
+anchorjs: false
+timezone: CN
 
 # Gems
-# from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
@@ -61,7 +58,7 @@ kramdown:
 #disqus_username: xiamingdotsite
 
 # Netease settings
-netease_comment: false
+#netease_comment: false
 
 # Analytics settings
 # Baidu Analytics
