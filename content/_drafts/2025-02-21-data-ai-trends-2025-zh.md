@@ -47,7 +47,7 @@ AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在�
 
 ### 从即时推断到深度推理
 
-自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的方面之一开源了GPT-4级具备深度推理能力的模型训练方法，人们在享受GPT-4级免费模型的同时，研究人员也不用再猜测其内部训练机制。
+自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT4级、具备深度推理能力的模型训练方法，人们在享受GPT4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
 
 如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
 
