@@ -77,17 +77,20 @@ LLM架构自身有几个显著缺陷：
 
 除此以外，即便LLM是个黑盒，其对自然语言模式、尤其对基于语言的逻辑推理的捕获，让人们不禁好奇这种类人思考的机制的本质是什么。在NeuroAI领域，结合LLM和大脑fMRI数据的研究，[Mischler2024](https://www.nature.com/articles/s42256-024-00925-4)和[Kumar2024](https://www.nature.com/articles/s41467-024-49173-5)揭示了LLM工作机制和人脑皮层的神经信号处理在宏观上的相似性。虽然仍处于初期研究阶段，该领域的研究或许是下一代AGI技术的突破所在。
 
-### 新NN架构和世界模型
-LSTM revised， RPN， KAN
-WorldModel
+### 新NN架构探索
+LSTM revised， RPN， KAN, JEPA
 
-### 神经符号AI
-推理时计算
+### 两种潜在AGI技术
+
+* WorldModel: JEPA
+* 神经符号系统：AlphaGeometry2
 
 ## Data&AI业务突围
+
 Google Gemini Flash Thinking with apps
 
 ## 总结
+
 其他延续的技术趋势，多模态、Agent框架
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
