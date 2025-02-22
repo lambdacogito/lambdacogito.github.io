@@ -21,7 +21,7 @@ AR和AE是两种常用的生成式语言模型的预训练方法，但并非全�
 
 AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在当前的语言模型训练中，并未基于自然语言单位的语义（概念）进行学习，而是基于token组合的统计规律。换句话说，在token集合展开的序列空间里，实际的自然语言样本是空间的子集，Transformer通过神经网络参数捕获了这个子空间的序列模式。只要神经网络表示的参数空间足够覆盖样本序列空间，便能够成功学习子集的表示。在这个意义上，AR和AE的训练方法对于“有限元素集合的序列空间”具有普适的学习能力。
 
-基于Transformer架构目前已在自然语言之外的多个领域得到实践，并且效果达到领域内SOTA，例如：
+Transformer架构目前已在自然语言之外的多个领域得到实践并达到SOTA：
 
 * 计算机视觉：图像分类[[ViT](https://arxiv.org/abs/2010.11929)]、目标检测[[DETR](https://arxiv.org/abs/2005.12872)]、图像生成[[TransGAN](https://arxiv.org/abs/2102.07074)]、图像分割[[SETR](https://arxiv.org/abs/2012.15840)]
 * 生物信息学：蛋白质结构预测[[AlphaFold2](https://www.nature.com/articles/s41586-021-03819-2)]、基因序列[[Lee2022](https://www.nature.com/articles/s41467-022-34152-5)]、单细胞组学[[Szalata2024](https://www.nature.com/articles/s41592-024-02353-z)]
