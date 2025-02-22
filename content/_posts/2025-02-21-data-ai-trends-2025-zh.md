@@ -15,7 +15,7 @@ tags: ["Artificial Intelligence"]
 
 Transformer属于深度神经网络的架构之一，具体属于**无监督的自回归预训练**模型。无监督（Self-supervised）意味着不需要人工标记数据，模型自动学习中间特征表示，并具备迁移学习能力。**自回归**（Auto-regressive）是预训练模型的方法之一，其本质在“回归”，基于过去的数据预测未来，例如LLM预测下一个token。**预训练**指通过大量的随机样本对模型进行拟合，尚不具备（高效的）场景化问题解决能力，因此需要post-train阶段对模型进行微调，以适应下游问题和场景。
 
-> 与AR相关的另一种预训练方法是**自编码**（Auto-encoding），如[BERT](https://arxiv.org/abs/1810.04805)提出的掩码语言模型，通过遮挡样本随机位置的信息，模型可结合上下文信息，学习丰富的语言符号表示，方便下游复用。
+与AR相关的另一种预训练方法是**自编码**（Auto-encoding），如[BERT](https://arxiv.org/abs/1810.04805)提出的掩码语言模型，通过遮挡样本随机位置的信息，模型可结合上下文信息，学习丰富的语言符号表示，方便下游复用。
 
 AR和AE是两种常用的生成式语言模型的预训练方法，但并非全部，例如[XLNet](https://arxiv.org/abs/1906.08237)提出排列语言模型实现双向上下文的结合，同时具备AR和AE的优势。此外，虽然**强化学习**和**对抗学习**也在某些LLM训练中（如DeepSeek-R1）发挥了重要作用，但其作为核心训练算法的模型和应用场景，仍有待进一步探索。在图计算领域，虽然AR和AE同样被用来训练图节点的低维表示，并在下游图任务中取得了不错的效果，但是Graph-native的训练方法仍在探索阶段。
 
@@ -37,11 +37,11 @@ AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在�
 
 对Transformer极致优化背后的逻辑是大家对Scaling-law的信奉。随着训练数据规模和参数量（trilion-scale）的提升，人们期望通过工程上极致的优化，在有限资源下训练更大的模型，期待再次出现类似GPT-3的涌现时刻。
 
-在此背景下，一方面是粗放式地堆叠计算卡，另一方面是类似DeepSeek团队在极致优化Transformer架构的每个部分：计算效率（如注意力机制、长序列优化、并行训练）、内存占用（如浮点精度、注意力窗口）、推断/Inference优化（如KVCache、蒸馏、量化、wafer级加速）等。
+在此背景下，一方面是粗放式地堆叠计算卡，另一方面是类似DeepSeek团队对Transformer的每个部分做极致优化：计算效率（如注意力机制、长序列优化、并行训练）、内存占用（如浮点精度、注意力窗口）、推断/Inference优化（如KVCache、蒸馏、量化、wafer级加速）等。
 
-工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是Transformer也是神经网络算法的内在限制（见下文世界模型）。
+工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是Transformer也是神经网络算法的内在限制（见下文后LLM时代）。
 
-> 无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
+> 所以无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解、掌握并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
 
 ### LLM知识增强
 
@@ -49,7 +49,7 @@ LLM架构自身有几个显著缺陷：
 
 * **知识更新成本高**：这是神经网络基于参数的隐知识表示（latent knowledge representaiton LKR）的限制，无法复用、局部更新和迁移知识。理解LLM的LKR是可解释AI领域关注的重要问题之一。如何复用LKR或寻找通用知识表示，也是AGI需要攻克的技术难点之一。
 * **生成“幻觉”**：虽然LLM注意力模块是确定性的，即模型训练好后，对于任何一个注意力模块给定输入后，输出是确定的；但LLM依然有生成幻觉问题，原因是多方面的[[Huang2025](https://dl.acm.org/doi/abs/10.1145/3703155)]，例如训练数据缺陷、错误传导、无自指导致的弱一致性等。
-* **可解释和可控性不足**：这也是神经网络架构的固有限制，几乎所有的post-train工作都只能在e2e下进行。虽然相关的LLM [probing和editing](https://arxiv.org/abs/2202.05262)技术也在研究，但是尚无稳定可靠的方法论或工具，甚至永远都不会有理想的方法。神经网络模型的过拟合和泛化，就像夜空中的启明和长庚，本为一体却又相互矛盾。
+* **可解释和可控性不足**：这也是神经网络架构的固有限制，几乎所有的post-train工作都只能在e2e下进行。虽然相关的LLM probing和[editing](https://arxiv.org/abs/2202.05262)技术也在研究，但尚无稳定可靠的方法论或工具。神经网络模型的过拟合和泛化，就像夜空中的启明和长庚，本为一体却又相互矛盾。
 
 尽管如此，LLM作为自然语言处理领域的一项颠覆性技术，其价值对于社会生产力的潜在提升，也是不容忽视的。为了利用更新信息、或私有域数据，Retrieval Augmented Generation (RAG) 的工作流被提出来。从最初基于文本块向量的[VectorRAG](https://arxiv.org/abs/2005.11401)到语义表示更丰富的[GraphRAG](https://arxiv.org/abs/2404.16130)，2024可谓是RAG大年，相关技术已经成为LLM+商业化落地的基石，也是未来AI-native apps的必备技能。
 
@@ -98,5 +98,7 @@ Google Gemini Flash Thinking with apps
 ## 总结
 
 其他延续的技术趋势，多模态、Agent框架
+
+[转载注明出处：https://xiaming.site/2025/02/21/data-ai-trends-2025-zh/]
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
