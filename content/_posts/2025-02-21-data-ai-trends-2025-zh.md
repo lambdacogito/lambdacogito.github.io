@@ -9,9 +9,7 @@ tags: ["Artificial Intelligence"]
 
 ## 背景
 
-人类社会历史是螺旋前进的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年基于Transformer架构实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。
-
-本文结合过去二三年的AI技术热点和发展脉络，对Data&AI前沿技术和2025年的趋势进行分析，探讨对AGI实现路径的一些思考，以及Data&AI相关技术产品如何突围和落地。
+人类社会历史是螺旋前进的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年基于Transformer架构实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。本文结合过去二三年的AI技术热点和发展脉络，对Data&AI前沿技术和2025年的趋势进行分析，探讨对AGI实现路径的一些思考，以及Data&AI相关技术产品如何突围和落地。
 
 ## Transformer介绍
 
@@ -41,7 +39,9 @@ AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在�
 
 在此背景下，一方面是粗放式地堆叠计算卡，另一方面是类似DeepSeek团队在极致优化Transformer架构的每个部分：计算效率（如注意力机制、长序列优化、并行训练）、内存占用（如浮点精度、注意力窗口）、推断/Inference优化（如KVCache、蒸馏、量化、wafer级加速）等。
 
-工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是Transformer也是神经网络算法的内在限制（见下文世界模型）。无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
+工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是Transformer也是神经网络算法的内在限制（见下文世界模型）。
+
+> 无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
 
 ### LLM知识增强
 
@@ -61,7 +61,7 @@ LLM架构自身有几个显著缺陷：
 
 如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
 
-对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
+> 对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
 
 ### LLM可解释性
 
