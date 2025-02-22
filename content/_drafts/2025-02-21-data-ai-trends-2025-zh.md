@@ -9,15 +9,17 @@ tags: ["Artificial Intelligence"]
 
 ## 背景
 
-人类社会历史是螺旋上升的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。
+人类社会历史是螺旋前进的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年基于Transformer架构实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。
 
 本文结合过去二三年的AI技术热点和发展脉络，对Data&AI前沿技术和2025年的趋势进行分析，探讨对AGI实现路径的一些思考，以及Data&AI相关技术产品如何突围和落地。
 
-## LLM的特点和一般性
+## Transformer介绍
 
-Transformer属于深度神经网络的架构之一，具体属于**无监督的自回归预训练模型**。无监督（Self-supervised）意味着不需要人工标记数据，模型自动学习中间特征表示，并具备迁移学习能力。**自回归**（Autoregressive）是预训练模型的方法之一，其本质在“回归”，基于过去的数据预测未来，例如LLM预测下一个token；另一种预训练方法是**自编码**（Autoencoding）预训练模型，如[BERT](https://arxiv.org/abs/1810.04805)提出的掩码语言模型，通过遮挡样本随机位置的信息，模型可结合上下文信息，学习丰富的语言符号表示，方便下游复用。
+Transformer属于深度神经网络的架构之一，具体属于**无监督的自回归预训练**模型。无监督（Self-supervised）意味着不需要人工标记数据，模型自动学习中间特征表示，并具备迁移学习能力。**自回归**（Auto-regressive）是预训练模型的方法之一，其本质在“回归”，基于过去的数据预测未来，例如LLM预测下一个token。**预训练**指通过大量的随机样本对模型进行拟合，尚不具备（高效的）场景化问题解决能力，因此需要post-train阶段对模型进行微调，以适应下游问题和场景。
 
-自回归（AR）和自编码（AE）是两种常用的生成式语言模型的预训练方法，但并非全部，例如[XLNet](https://arxiv.org/abs/1906.08237)提出排列语言模型实现双向上下文的结合，同时具备AR和AE的优势。此外，虽然**强化学习**和**对抗学习**也在某些LLM训练中（如DeepSeek-R1）发挥了重要作用，但其作为核心训练算法的模型和应用场景，仍有待进一步探索。在图计算领域，虽然AR和AE同样被用来训练图节点的低维表示，并在下游图任务中取得了不错的效果，但是Graph-native的训练方法仍在探索阶段。
+> 与AR相关的另一种预训练方法是**自编码**（Auto-encoding），如[BERT](https://arxiv.org/abs/1810.04805)提出的掩码语言模型，通过遮挡样本随机位置的信息，模型可结合上下文信息，学习丰富的语言符号表示，方便下游复用。
+
+AR和AE是两种常用的生成式语言模型的预训练方法，但并非全部，例如[XLNet](https://arxiv.org/abs/1906.08237)提出排列语言模型实现双向上下文的结合，同时具备AR和AE的优势。此外，虽然**强化学习**和**对抗学习**也在某些LLM训练中（如DeepSeek-R1）发挥了重要作用，但其作为核心训练算法的模型和应用场景，仍有待进一步探索。在图计算领域，虽然AR和AE同样被用来训练图节点的低维表示，并在下游图任务中取得了不错的效果，但是Graph-native的训练方法仍在探索阶段。
 
 AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在当前的语言模型训练中，并未基于自然语言单位的语义（概念）进行学习，而是基于token组合的统计规律。换句话说，在token集合展开的序列空间里，实际的自然语言样本是空间的子集，Transformer通过神经网络参数捕获了这个子空间的序列模式。只要神经网络表示的参数空间足够覆盖样本序列空间，便能够成功学习子集的表示。在这个意义上，AR和AE的训练方法对于“有限元素集合的序列空间”具有普适的学习能力。
 
@@ -37,15 +39,9 @@ AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在�
 
 对Transformer极致优化背后的逻辑是大家对Scaling-law的信奉。随着训练数据规模和参数量（trilion-scale）的提升，人们期望通过工程上极致的优化，在有限资源下训练更大的模型，期待再次出现类似GPT-3的涌现时刻。
 
-在此背景下，一方面是粗放式地堆叠计算卡，另一方面是类似DeepSeek团队在极致优化transformer架构的每个部分：计算效率（如注意力机制、长序列优化、并行训练）、内存占用（如浮点精度、注意力窗口）、推断/Inference优化（如KVCache、蒸馏、量化、wafer级加速）等。
+在此背景下，一方面是粗放式地堆叠计算卡，另一方面是类似DeepSeek团队在极致优化Transformer架构的每个部分：计算效率（如注意力机制、长序列优化、并行训练）、内存占用（如浮点精度、注意力窗口）、推断/Inference优化（如KVCache、蒸馏、量化、wafer级加速）等。
 
-工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是transformer也是神经网络算法的内在限制（见下文世界模型）。无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
-
-### 从即时推断到深度推理
-
-自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT4级、具备深度推理能力的模型训练方法，人们在享受GPT4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
-
-如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
+工程优化是LLM产品化和业务化降低成本的必经之路，但单纯地追求scaling-law并不能让我们更接近AGI或human-level intelligence，这是Transformer也是神经网络算法的内在限制（见下文世界模型）。无论Jason Huang多么大声疾呼scaling-law无比重要，研究人员也要保持理性和洞察力，理解并跨越scaling-law，寻找那把真正能打开AGI大门的钥匙。
 
 ### LLM知识增强
 
@@ -59,6 +55,14 @@ LLM架构自身有几个显著缺陷：
 
 同时，结合数据和算法的增强，在减小模型尺寸的同时保持LLM的有效知识密度（笔者注：有效知识密度，定义为LLM内的知识完备度与模型复杂度--等效vanilla transformer架构的参数量--的比值），为模型的推理质量、推理深度的增强铺平了道路。诚如Ilya Sutskever所言，Internet是LLM时代的化石燃料。在数据规模有限的情况下，深入理解LLM原理，磨炼算法才是正途（见下文可解释性）。
 
+### 从即时推断到深度推理
+
+自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT4级、具备深度推理能力的模型训练方法，人们在享受GPT4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
+
+如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
+
+对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
+
 ### LLM可解释性
 
 和单纯用好LLM相比，理解LLM的工作机制，深入探索知识表示、记忆、推理、遗忘等深层次和人类认知相关的基础技术，更有助于迈向AGI。因此AI开拓者们在[Nature](https://www.nature.com/articles/s41467-023-37180-x)大声呼吁，我们应该注重neuroscience和AI的跨领域研究（NeuroAI），加强认知、神经科学等基础领域的教育和资金投入。
@@ -67,16 +71,25 @@ LLM架构自身有几个显著缺陷：
 
 在深入理解LLM机制上，[Zhou2024](https://www.nature.com/articles/s41586-024-07930-y)发现参数越大、post-train阶段指令调教越多的LLM稳定性越差。在内部激活神经元不可控的前提下，针对特定领域问题的fine-tuning/filtering会加速其他领域知识的遗忘。[Mahowald2024](https://www.sciencedirect.com/science/article/pii/S1364661324000275)的研究揭示了LLM对Formal语言能力（指对语言规则和统计规律的掌握，如翻译）较强，但是Functional语言能力（指利用语言在现实场景应用，如推理）较弱；这与当前LLM向DeepReasoning方向演进的趋势相符。
 
-事实上，由于训练数据内部知识的不一致性，造成LLM内部的知识冲突，[Xu2024](https://aclanthology.org/2024.emnlp-main.486/)表明这种冲突是普遍存在、且内生的，需要更加底层的变革。因此，LLM是弱一致性（weak-consistency）模型。和一致性相关有个著名的[Gödel不完备定理](https://xiaming.site/2025/02/08/neurosymbolic-part2/)，其表示对于任意的formal system，完备性（completeness）和一致性（consistency）无法兼而有之。[Pérez2021](https://jmlr.org/papers/v22/20-302.html)证明transformer一定约束下是turing-complete，而turing-complete system是formal system。由此可见，LLM在一定约束下满足Gödel不完备定理，在追求知识量（高完备性）的前提下，势必会破坏知识表示的一致性：这如同紧箍咒，定位了通用单一LLM模型的能力边界。因此笔者认为，这也预示着**MoE架构**比当下流行的通用单一模型更有前景。
+事实上，由于训练数据内部知识的不一致性，造成LLM内部的知识冲突，[Xu2024](https://aclanthology.org/2024.emnlp-main.486/)表明这种冲突是普遍存在、且内生的，需要更加底层的变革。因此，LLM是弱一致性（weak-consistency）模型。和一致性相关有个著名的[Gödel不完备定理](https://xiaming.site/2025/02/08/neurosymbolic-part2/)，其表示对于任意的formal system，完备性（completeness）和一致性（consistency）无法兼而有之。[Pérez2021](https://jmlr.org/papers/v22/20-302.html)证明Transformer一定约束下是turing-complete，而turing-complete system是formal system。由此可见，LLM在一定约束下满足Gödel不完备定理，在追求知识量（高完备性）的前提下，势必会破坏知识表示的一致性：这如同紧箍咒，定位了通用单一LLM模型的能力边界。因此笔者认为，这也预示着**MoE架构**比当下流行的通用单一模型更有前景。
 
 ![neuroai-llm](/img/inpost/2025/neuroai-llm-brain.png)
 
 除此以外，即便LLM是个黑盒，其对自然语言模式、尤其对基于语言的逻辑推理的捕获，让人们不禁好奇：这种类人思考的机制的本质是什么？在NeuroAI领域，结合LLM和大脑fMRI数据的研究，[Mischler2024](https://www.nature.com/articles/s42256-024-00925-4)和[Kumar2024](https://www.nature.com/articles/s41467-024-49173-5)揭示了LLM工作机制和人脑皮层的神经信号处理在宏观上的相似性。虽然仍处于初期研究阶段，该领域的研究或许是下一代AGI技术的突破所在。
 
-### PostLLM时代：两种潜在的AGI路径
+### 后LLM时代：两种潜在的AGI路径
+
+它山之石可以攻玉。人们经过对近年来对LLM及Transformer架构的深入研究，在通过工程化增强LLM实用性的同时，也逐步认识到其内在局限性。从AI概念提出至今，人们不断对“机器如何模拟人类”的想法进行实践，经典的研究领域包括认知框架（Cognitive Architectures）、形式系统（Formal systems）、心智理论（Theory of Minds）、世界模型（World Models）等。虽然这些领域在实践中尚未得到完全的解决，但其思想沉淀对AGI研究依然有所启示。
+
+基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人的思想精华和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
+
+#### 世界模型
 
 * WorldModel: JEPA
-* 神经符号系统：AlphaGeometry2
+
+#### 神经符号AI
+
+* AlphaGeometry2
 
 ## Data&AI业务突围
 
