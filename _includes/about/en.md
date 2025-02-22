@@ -1,12 +1,5 @@
 I am a natural optimist and a dreamer with aspirations for something big. What’s considered "big" is relative—it evolves in response to the world around me and sometimes to the shifts within my own spiritual landscape. I’m also an avid enthusiast of human technologies, and the combination of these two passions gives me a strong vision and high expectations for future innovations. However, when I observe human technological progress, it often feels like advancement is slow and incremental, especially in theoretical and industrial fields over the past few decades. This sense of stagnation leads me to seek inspiration from sci-fi movies and literature. That’s why [StarTrek](https://simple.wikipedia.org/wiki/Star_Trek) has become one of my all-time favorite series and films—it represents the future I envision. It also fuels my drive to explore projects that might one day bring that future to life.
 
-#### Education
-
-*   2010-2016: Shanghai Jiaotong Univ., Information and Communication
-    Engineering, Ph.D.
-*   2006-2010: Xidian Univ., Optical Information and Science Technology,
-    Bachelor
-
 #### Academic Experience
 
 I have a background in both optical physics and computer science:
