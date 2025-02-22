@@ -9,7 +9,7 @@ tags: ["Artificial Intelligence"]
 
 ## 背景
 
-人类社会历史是螺旋前进的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年基于Transformer架构实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。本文结合过去二三年的AI技术热点和发展脉络，对Data&AI前沿技术和2025年的趋势进行分析，探讨对AGI实现路径的一些思考，以及Data&AI相关技术产品如何突围和落地。
+人类社会历史是螺旋前进的，科技史亦然。从1950s提出Artificial Intelligence概念至今，AI技术已经经历了多次春、冬季交替演进([AI Winter](https://en.wikipedia.org/wiki/AI_winter))。上一代AI技术（1970s-1980s）是基于符号（symbolic）的计算系统，以LispMacine、专家系统、日本第5代计算机系统等为代表。这类技术在知识表示、逻辑推理上有优势，但是不具备模式识别能力。此后基于统计学的MachineLearning复兴（1990s-2000s），虽然彼时AI尚不普遍，但相关的数据统计分析、大数据系统、云计算基础设施，在这一时期并行快速发展。Hinton等人2006年提出“深度学习”概念后，随着AlexNet (2012) 和AlphaGo (2015) 的成功，AI技术逐步从基于浅层统计模型（例如SVM）向深层神经网络（例如CNN）演进；Google研究人员于2017年提出[Transformer架构](https://arxiv.org/abs/1706.03762)，之后神经网络的复杂度呈指数级上升，其性能也推动了NLP和相关领域的技术变革。OpenAI 2022年基于Transformer架构实现AI的里程碑式创新（ChatGPT），再次燃起人类对AGI的热情和渴望。本文结合过去二三年的AI技术热点和发展脉络，对Data&AI前沿技术和2025年的趋势进行分析，并探讨笔者对AGI实现路径的一些思考。
 
 ## Transformer介绍
 
@@ -61,7 +61,7 @@ LLM架构自身有几个显著缺陷：
 
 如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
 
-> 对于推理机制和算法的深入研究，或许是ChatGPT引领的这一波AI复兴留给未来AGI科技的重要资产之一。
+对于推理机制和算法的深入研究，或许是ChatGPT引领的AI复兴留给未来AGI科技的重要资产之一，也是未来LLM商业化的核心竞争力。深度推理之于LLM，类似于PageRank算法之于搜索引擎。商业巨擘基于LLM技术对自身内部无处不在的数据Silo进行整合，基于深度推理开发出更具吸引力产品体验。近期上线的Gemini Flash Thinking with apps功能，基于整合Youtube、GoogleMap的数据，Gemini2展现出比单纯模型推理、RAG更为强大的实际问题解决能力。但因为涉及核心的业务逻辑，背后的深度推理链未来可能不会再采取开源开放的态度。
 
 ### LLM可解释性
 
@@ -90,10 +90,6 @@ LLM架构自身有几个显著缺陷：
 #### 神经符号AI
 
 * AlphaGeometry2
-
-## Data&AI业务突围
-
-Google Gemini Flash Thinking with apps
 
 ## 总结
 
