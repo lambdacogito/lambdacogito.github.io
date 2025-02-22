@@ -29,7 +29,7 @@ AR和AE模型，在NLP领域取得了巨大成功。透过表象看本质，在�
 * 语音处理：语音识别[[Conformer](https://arxiv.org/abs/2005.08100)]、合成[[Tacotron](https://arxiv.org/abs/1712.05884)]
 * 多模态学习：图文生成[[DALL-E](https://arxiv.org/abs/2102.12092)]、视频理解[[VideoBERT](https://arxiv.org/abs/1904.01766)]
 
-从以上实践可见，通过将领域内问题通过适当的方法转换成序列数据后，构建离散元素集合，[Mirchandani2023](https://arxiv.org/pdf/2307.04721)总结出Transformer是**通用序列模式学习器** 。对于一个封闭/半封闭式的复杂系统，当系统内部具有有限状态集合、或有限状态生成规则（如明确的物理规律），Transformer能够较好的对这类系统行为建模。
+从以上实践可见，通过将领域内问题通过适当的方法转换成序列数据后，构建离散元素集合，[Mirchandani2023](https://arxiv.org/pdf/2307.04721)总结出Transformer是**通用序列模式学习器** 。对于一个封闭/半封闭式的复杂系统，当系统内部具有有限状态集合、或有限状态生成规则（如明确的物理规律），Transformer能够较好地对这类系统行为建模。
 
 ## 技术热点和创新趋势
 
@@ -57,7 +57,7 @@ LLM架构自身有几个显著缺陷：
 
 ### 从即时推断到深度推理
 
-自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT4级、具备深度推理能力的模型训练方法，人们在享受GPT4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
+自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT-4级、具备深度推理能力的模型训练方法，人们在享受GPT-4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
 
 如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
 
