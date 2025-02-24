@@ -59,7 +59,7 @@ LLM架构自身有几个显著缺陷：
 
 自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT-4级、具备深度推理能力的模型训练方法，人们在享受GPT-4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
 
-如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
+如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，最新成果例如OpenAI o1/o3-mini, DeepSeek-R1, Google Gemini Flash Thinking。Dr. Wolfe最近有篇精彩的[总结文章](https://web.archive.org/web/20250219080523/https://cameronrwolfe.substack.com/p/demystifying-reasoning-models)。
 
 对于推理机制和算法的深入研究，或许是ChatGPT引领的AI复兴留给未来AGI科技的重要资产之一，也是未来LLM商业化的核心竞争力。深度推理之于LLM，类似于PageRank算法之于搜索引擎。商业巨擘基于LLM技术对自身内部无处不在的数据Silo进行整合，基于深度推理开发出更具吸引力产品体验。近期上线的Gemini Flash Thinking with apps功能，基于整合Youtube、GoogleMap的数据，Gemini2展现出比单纯模型推理、RAG更为强大的实际问题解决能力。但因为涉及核心的业务逻辑，背后的深度推理链未来可能不会再采取开源开放的态度。
 
