@@ -83,7 +83,7 @@ LLM架构自身有几个显著缺陷：
 
 基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人的思想精华和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
 
-**世界模型**的思想与AI发展一脉相承，概念的正式提出可认为源于[Han2018](https://arxiv.org/abs/1803.10122)论文。专注于。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。
+**世界模型**的思想与AI发展一脉相承，这个概念的具体阐述通常被认为源于Han & Schmidhuber 2018的同名[论文](https://arxiv.org/abs/1803.10122)。专注于。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。
 
 * WorldModel: JEPA
 * AlphaGeometry2
