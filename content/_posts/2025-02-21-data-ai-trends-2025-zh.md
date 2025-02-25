@@ -59,7 +59,7 @@ LLM架构自身有几个显著缺陷：
 
 自[Chain of Thought](https://arxiv.org/abs/2201.11903)提出以来，人们在优化LLM解决复杂推理问题的同时，也在不断探索如何通过计算机模拟人类思考（Turing's imitation game）。DeepSeek的出圈，一方面是对工程极致的追求，更重要的是开源了GPT-4级、具备深度推理能力的模型训练方法，人们在享受GPT-4级免费模型的同时，研究人员再也不用猜测其内部训练机制了。
 
-如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，例如DeepSeek-R1, OpenAI的Deep Research, DeepMind的Gemini Flash Thinking，是此类技术的最新成果，也是这个方向新的起点。
+如果推断 (inference) 是对模型在训练阶段捕获的隐知识表示（token序列模式）的浅层反馈，那推理 (reasoning) 便是对这些隐性知识的深度挖掘。以自然语言为表示的推理，演绎出新的知识，最新成果例如OpenAI o1/o3-mini, DeepSeek-R1, Google Gemini Flash Thinking。Dr. Wolfe最近有篇精彩的[总结文章](https://web.archive.org/web/20250219080523/https://cameronrwolfe.substack.com/p/demystifying-reasoning-models)。
 
 对于推理机制和算法的深入研究，或许是ChatGPT引领的AI复兴留给未来AGI科技的重要资产之一，也是未来LLM商业化的核心竞争力。深度推理之于LLM，类似于PageRank算法之于搜索引擎。商业巨擘基于LLM技术对自身内部无处不在的数据Silo进行整合，基于深度推理开发出更具吸引力产品体验。近期上线的Gemini Flash Thinking with apps功能，基于整合Youtube、GoogleMap的数据，Gemini2展现出比单纯模型推理、RAG更为强大的实际问题解决能力。但因为涉及核心的业务逻辑，背后的深度推理链未来可能不会再采取开源开放的态度。
 
@@ -79,19 +79,20 @@ LLM架构自身有几个显著缺陷：
 
 ### 后LLM时代：两种潜在的AGI路径
 
-它山之石可以攻玉。人们经过对近年来对LLM及Transformer架构的深入研究，在通过工程化增强LLM实用性的同时，也逐步认识到其内在局限性。从AI概念提出至今，人们不断对“机器如何模拟人类”的想法进行实践，经典的研究领域包括认知框架（Cognitive Architectures）、形式系统（Formal systems）、心智理论（Theory of Minds）、世界模型（World Models）等。虽然这些领域的问题在实践中尚未得到完全的解决，但其思想沉淀对AGI研究依然有所启示。
+它山之石可以攻玉。近年来，人们经过对LLM及Transformer架构的深入研究，在通过工程化增强LLM实用性的同时，也逐步认识到其内在局限性。从AI概念提出至今，人们不断对“机器如何模拟人类”的想法进行实践，经典的研究领域包括认知框架（Cognitive Architectures）、形式系统（Formal systems）、心智理论（Theory of Minds）、世界模型（World Models）等。虽然这些领域的问题在实践中尚未得到完全的解决，但其思想沉淀对AGI研究依然有所启示。
 
-基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人的思想精华和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
+基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人思想和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
 
-**世界模型**的思想与AI发展一脉相承，概念的正式提出可认为源于[Han2018](https://arxiv.org/abs/1803.10122)论文。专注于。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。
+![world-model](/img/inpost/2025/world-model-lecun.png)
 
-* WorldModel: JEPA
-* AlphaGeometry2
+**世界模型**的思想与AI发展一脉相承，其核心思想从第一性原理出发，通过描述世界的状态和行为，并定义状态和行为之间的联系，来构建AI模型/系统。世界模型可以用于解决各种问题，如智能体在环境中的规划、决策、行为等。[Han2018](https://arxiv.org/abs/1803.10122)首次系统介绍了相关概念，并基于vision-memory-controller架构的二维小车游戏展示了世界模型的潜力。[LeCun2022](https://openreview.net/pdf?id=BZ5a1r-kVsf)提出了基于能量模型EBM和JEPA架构的世界模型实现思路，并在视觉表征、自动驾驶领域得到了实践。李飞飞带队创业成立[WorldLabsAI](https://www.worldlabs.ai/about)，专注于大世界模型(Large World Models，LWMs)，去年12月发布了空间智能计算的第一个成果Generating 3D worlds。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。该领域仍处于起步和布局阶段，但其前景令人期待。
+
+**神经符号AI**是另一个让人兴奋的方向。基于统计模型的机器学习和以LLM为代表的纯神经网络架构，是1990s以后的主流方法，在持续学习、可解释性、常识知识等方面存在缺陷。当前AI研究者的技术栈已鲜有符号AI的影子。符号AI在知识表示、逻辑推理、可解释性等方面有天然优势。在人类的科技理论中，通过领域语言（DSL）而非自然语言表述是普遍的，例如数据符号、逻辑符号、电路符号、编程语言等。基于DSL能够对领域内问题进行精确定义并推理，这也是符号AI的魅力所在。在LLM普遍头疼的数字加减问题，在数据DSL里是最基本的运算。例如Google [AlphaGeometry](https://www.nature.com/articles/s41586-023-06747-5)通过神经符号AI解决IMO几何数据问题，[新版V2](https://arxiv.org/abs/2502.03544)实现了首次超越人类、84%的问题解决率。
+
+在未来的AGI探索中，笔者认为LLM、世界模型、神经符号AI都将是核心技术，并且思想上相辅相成，在世界知识表征、逻辑推理、持续学习、[Active Inference](https://doi.org/10.1016/j.tics.2023.10.002)等方面实现完全不同于当前AI的范式。
 
 ## 总结
 
-其他延续的技术趋势，多模态、Agent框架
+本文围绕当前Data&AI研究领域，对LLM相关的思考、研究、未来世界模型、神经符号AI等方向进行了总结。因为笔者研究视角和精力限制，并未能对当前所有技术趋势进行总结，例如多模态MLLM、Agentic框架也是2025年的热点研究领域，读者可以继续探索AGI的世界。
 
-[转载注明出处：https://xiaming.site/2025/02/21/data-ai-trends-2025-zh/]
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+[版权所有，转载注明出处：https://xiaming.site/2025/02/21/data-ai-trends-2025-zh/]
