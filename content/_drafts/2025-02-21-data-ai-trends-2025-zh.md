@@ -81,11 +81,10 @@ LLM架构自身有几个显著缺陷：
 
 它山之石可以攻玉。人们经过对近年来对LLM及Transformer架构的深入研究，在通过工程化增强LLM实用性的同时，也逐步认识到其内在局限性。从AI概念提出至今，人们不断对“机器如何模拟人类”的想法进行实践，经典的研究领域包括认知框架（Cognitive Architectures）、形式系统（Formal systems）、心智理论（Theory of Minds）、世界模型（World Models）等。虽然这些领域的问题在实践中尚未得到完全的解决，但其思想沉淀对AGI研究依然有所启示。
 
-基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人的思想精华和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
+基于当前数据规模和算力提升，我们应该重新审视AI的发展历程，汲取前人思想和实践经验，从宏观视角探索潜在的AGI实现路径。笔者以为，当下有两个潜在的AGI实现路径值得关注：世界模型和神经符号AI（Neuro-symbolic AI）。
 
-**世界模型**的思想与AI发展一脉相承，这个概念的具体阐述通常被认为源于Han & Schmidhuber 2018的同名[论文](https://arxiv.org/abs/1803.10122)。专注于。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。
+**世界模型**的思想与AI发展一脉相承，其核心思想从第一性原理出发，通过描述世界的状态和行为，并定义状态和行为之间的联系，来构建AI模型/系统。世界模型可以用于解决各种问题，如智能体在环境中的规划、决策、行为等。[Han2018](https://arxiv.org/abs/1803.10122)首次系统介绍了相关概念，并基于vision-memory-controller架构的二维小车游戏展示了世界模型的潜力。[LeCun2019]()提出了基于能量模型EBM和JEPA架构的世界模型实现思路，并在视觉表征、自动驾驶领域得到了实践。李飞飞带队创业成立[WorldLabsAI](https://www.worldlabs.ai/about)，专注于大世界模型Large World Models (LWMs)，去年12月发布了空间智能计算的第一个成果Generating 3D worlds。Google于2025年1月宣布在DeepMind内部成立专门的WorldModeling团队，以解决世界模型问题。该领域仍处于起步和布局阶段，但其潜力令人期待。
 
-* WorldModel: JEPA
 * AlphaGeometry2
 
 ## 总结
