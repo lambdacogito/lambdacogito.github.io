@@ -1,11 +1,8 @@
-title: inno.trek
-SEOTitle: inno.trek
+title: λCogLab
+SEOTitle: lambdacogito
 header-img: "img/about-bg-walle.jpg"
 email: chenxm35@gmail.com
-description: >- # this means to ignore newlines until "baseurl:
-  Here is DrJaminChen's personal blog. Sharing thinking about computer intellegence,
-  arts, and on the disordered world. Learn more beyond what you can imagine.
-url: "https://xiaming.site"
+url: "https://lambdacogito.github.io"
 baseurl: ""
 
 collections_dir: content
