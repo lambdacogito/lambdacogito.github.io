@@ -15,11 +15,9 @@ future: true
 
 # SNS settings
 RSS: true
-weibo_username:     fuckinmylife
-zhihu_username:     xiamingc
 github_username:    caesar0301
+facebook_username:  caesar0301
 twitter_username:   drjaminchen
-facebook_username:  xiamingc
 linkedin_username:  xiamingc
 
 # Build settings
